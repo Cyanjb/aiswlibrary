@@ -39,6 +39,7 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .pair a{margin-right:10px}
 .imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:10px}
 .imgs .ph{aspect-ratio:1;background:#0d0b11;border:1px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:.8rem}
+.imgs img,.imgs video{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
 .cta{background:linear-gradient(120deg,#241a2e,#1a2430);border:1px solid var(--line);border-radius:16px;padding:22px;margin:34px 0}
 .cta b{color:var(--pink)}
 .crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
@@ -86,7 +87,19 @@ for k in kws:
         body_core = f"""<div class="label">Members only</div>
 <p>{html.escape(k['definition'].split('.')[0])}. The full entry, tested examples, and prompt recipes live inside the vault.</p>{CTA}"""
     else:
-        imgs = '<div class="imgs">' + ''.join('<div class="ph">example coming from the archive</div>' for _ in range(4)) + '</div>'
+        media = [m.strip() for m in k.get("images", "").split(";") if m.strip()]
+        if media:
+            cells = []
+            for m in media:
+                src = html.escape(f"../assets/{m}")
+                if m.lower().endswith((".mp4", ".webm")):
+                    cells.append(f'<video src="{src}" autoplay muted loop playsinline></video>')
+                else:
+                    cells.append(f'<img src="{src}" alt="{html.escape(k["name"])} example" loading="lazy">')
+            imgs = '<div class="imgs">' + "".join(cells) + "</div>"
+        else:
+            ph_text = "example clip coming soon" if "seedance" in k.get("works_in", "") else "example coming from the archive"
+            imgs = '<div class="imgs">' + ''.join(f'<div class="ph">{ph_text}</div>' for _ in range(4)) + '</div>'
         body_core = f"""<div class="label">What it means</div><p>{html.escape(k['definition'])}</p>
 <div class="label">When to use it</div><p>{html.escape(k['when_to_use'])}</p>
 <div class="label">Try this</div><div class="example">{html.escape(k['prompt_example'])}</div>
