@@ -11,7 +11,14 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 .card p{color:var(--soft);font-size:.92rem;margin:6px 0 0}
 .tag{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:99px;padding:2px 10px;margin-bottom:8px}
-.lock{color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.8rem;border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--soft);background:var(--card);cursor:pointer}
+.chip:hover,.chip.on{border-color:var(--pink);color:var(--pink)}
+.searchbox{width:100%;font-size:1.05rem;padding:14px 18px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-family:inherit;outline:none}
+.searchbox:focus{border-color:var(--teal)}
+.fgroup{margin:14px 0}.fgroup .label{margin:0 0 6px}
+#results .card small{color:var(--gold);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+#noresults{color:var(--soft);padding:20px 0}
 .entry{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;margin:22px 0}
 .label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:18px 0 4px}
 .example{background:#0d0b11;border:1px dashed var(--line);border-radius:10px;padding:12px 16px;font-family:monospace;color:var(--gold)}
