@@ -1,0 +1,24 @@
+
+:root{--bg:#121016;--card:#1b1722;--ink:#f2edf5;--soft:#a89db3;--pink:#ff5fa2;--teal:#4fd8c4;--gold:#e8b64c;--line:#2c2536}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--teal);text-decoration:none}a:hover{color:var(--pink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);padding:18px 0}
+.brand{font-size:1.15rem;color:var(--ink)}.brand b{color:var(--pink)}
+.hero{padding:56px 0 36px}.hero h1{font-size:2.3rem;margin:0 0 10px}.hero p{color:var(--soft);max-width:640px}
+h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{color:var(--soft);font-size:.92rem;margin:6px 0 0}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.lock{color:var(--gold)}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;margin:22px 0}
+.label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:18px 0 4px}
+.example{background:#0d0b11;border:1px dashed var(--line);border-radius:10px;padding:12px 16px;font-family:monospace;color:var(--gold)}
+.pair a{margin-right:10px}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:10px}
+.imgs .ph{aspect-ratio:1;background:#0d0b11;border:1px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:.8rem}
+.cta{background:linear-gradient(120deg,#241a2e,#1a2430);border:1px solid var(--line);border-radius:16px;padding:22px;margin:34px 0}
+.cta b{color:var(--pink)}
+.crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
+footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0;color:var(--soft);font-size:.9rem}

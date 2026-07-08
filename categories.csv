@@ -1,0 +1,69 @@
+category_id,name,section_id,tier
+art-styles-movements,Art Styles and Movements,styles-keywords,free
+illustration-and-animation,Illustration and Animation,styles-keywords,free
+techniques,Techniques,styles-keywords,free
+scapes,Scapes,styles-keywords,free
+world-culture-styles,World Culture Styles,styles-keywords,free
+time-periods-and-eras,Time Periods and Eras,styles-keywords,free
+lighting,Lighting,styles-keywords,free
+colors-palettes,Colors and Palettes,styles-keywords,free
+anime-and-manga,Anime and Manga,styles-keywords,free
+style-suffixes,Style Suffixes,styles-keywords,free
+special-effects,Special Effects,styles-keywords,free
+power-words,Power Words,styles-keywords,free
+people-descriptors,People Descriptors,styles-keywords,free
+cliche-roles,Cliche Roles,styles-keywords,free
+weather,Weather,styles-keywords,free
+medium,Medium,styles-keywords,free
+renders,Renders,styles-keywords,free
+textures,Textures,styles-keywords,free
+patterns,Patterns,styles-keywords,free
+other,Other,styles-keywords,free
+basic-color-spectrum,Basic Color Spectrum,color-library,free
+advanced-color-spectrum,Advanced Color Spectrum,color-library,free
+art-literature-and-diagrams,"Art, Literature and Diagrams",storytelling,free
+tv-and-movie-culture,TV and Movie Culture,storytelling,free
+literature-and-fiction,Literature and Fiction,storytelling,free
+storytelling-core,Storytelling,storytelling,free
+emotions-and-moods,Emotions and Moods,storytelling,free
+fashion-timeline-history,Fashion Timeline and History,storytelling,free
+worldwide-fashion,Worldwide Fashion,storytelling,free
+comic-books,Comic Books,storytelling,free
+characters-public-domain,Public Domain Characters,storytelling,free
+actions,Actions,storytelling,free
+body-types,Body Types,storytelling,free
+business,Business,design-industry,free
+architects,Architects,design-industry,free
+architectural-styles,Architectural Styles,design-industry,free
+fashion-designers,Fashion Designers,design-industry,free
+fashion-patterns-style,Fashion Patterns and Style,design-industry,free
+pottery-and-ceramics,Pottery and Ceramics,design-industry,free
+jewelry-and-gemstones,Jewelry and Gemstones,design-industry,free
+interior-decor,Interior Decor,design-industry,free
+furniture,Furniture,design-industry,free
+food-and-cooking-effects,Food and Cooking Effects,design-industry,free
+printing-and-transfer-techniques,Printing and Transfer Techniques,design-industry,free
+music,Music,design-industry,free
+dance,Dance,design-industry,free
+food,Food,design-industry,free
+art-handicrafts,Art Handicrafts,design-industry,free
+craft-hobbies,Craft Hobbies,design-industry,free
+academic,Academic,design-industry,free
+science-and-elements,Science and Elements,design-industry,free
+plants-and-herbs,Plants and Herbs,design-industry,free
+metals,Metals,design-industry,free
+animals,Animals,design-industry,free
+interior-designers,Interior Designers,design-industry,free
+photographers,Photographers,photography,free
+photography-styles,Photography Styles,photography,free
+photo-types-and-films,Photo Types and Films,photography,free
+photography-special-effects,Photography Special Effects,photography,free
+photo-angles,Photo Angles,photography,free
+pd-classics,Classics,public-domain-artists,free
+pd-painters,Painters,public-domain-artists,free
+pd-illustrators,Illustrators,public-domain-artists,free
+style-hybrids,Style Hybrids,advanced-keywords,member
+hybrid-mediums,Hybrid Mediums,advanced-keywords,member
+exotic-themes,Exotic Themes,advanced-keywords,member
+illusions,Illusions,advanced-keywords,member
+version-61-srefs,Version 6.1 Srefs,sref-codes,member
