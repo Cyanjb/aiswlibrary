@@ -47,6 +47,8 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:10px}
 .imgs .ph{aspect-ratio:1;background:#0d0b11;border:1px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:.8rem}
 .imgs img,.imgs video{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+.imgs.media{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.imgs.media img,.imgs.media video{aspect-ratio:16/9}
 .cta{background:linear-gradient(120deg,#241a2e,#1a2430);border:1px solid var(--line);border-radius:16px;padding:22px;margin:34px 0}
 .cta b{color:var(--pink)}
 .crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
@@ -105,10 +107,10 @@ for k in kws:
             for m in media:
                 src = html.escape(f"../assets/{m}")
                 if m.lower().endswith((".mp4", ".webm")):
-                    cells.append(f'<video src="{src}" autoplay muted loop playsinline></video>')
+                    cells.append(f'<video src="{src}" autoplay muted loop playsinline controls></video>')
                 else:
                     cells.append(f'<img src="{src}" alt="{html.escape(k["name"])} example" loading="lazy">')
-            imgs = '<div class="imgs">' + "".join(cells) + "</div>"
+            imgs = '<div class="imgs media">' + "".join(cells) + "</div>"
         else:
             ph_text = "example clip coming soon" if "seedance" in k.get("works_in", "") else "example coming from the archive"
             imgs = '<div class="imgs">' + ''.join(f'<div class="ph">{ph_text}</div>' for _ in range(4)) + '</div>'
