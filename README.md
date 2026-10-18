@@ -29,6 +29,7 @@ Term + plain definition + when to use it + example prompt phrase. Beginner voice
 
 ## Adding keywords
 Add a row to keywords.csv (status=published), rebuild, upload changed files to GitHub. Netlify deploys automatically.
+Rows with source=claude-2026-10-18 were written by Claude to fill empty categories. When the Discord archive is migrated, a tested archive post replaces the Claude row for the same keyword (keep the slug).
 
 ## Migrating the Discord archive
 1. Third party: DiscordChatExporter (free, github.com/Tyrrrz/DiscordChatExporter) exports each forum channel to JSON with image attachments
@@ -38,5 +39,7 @@ Add a row to keywords.csv (status=published), rebuild, upload changed files to G
 
 ## Rules
 - Slugs are permanent once published
-- Living artists are NOT published; Public Domain Artists only (ethical call, revisit deliberately or never)
+- Living people are NOT published by name. Deceased creators are allowed in Architects, Photographers, Fashion Designers and Interior Designers, with birth and death years in the definition (decided 18 October 2026)
+- The Public Domain Artists section stays strictly public domain: Classics died before 1800, Painters and Illustrators died before 1956
+- Sref codes are only published from real tests; never write a code that was not run
 - Every page carries the vault CTA; the library is the top of the funnel
