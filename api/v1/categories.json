@@ -411,7 +411,7 @@
   "category_id": "camera-movements",
   "name": "Camera Movements",
   "section": "Video and Cinematography",
-  "count": 25
+  "count": 44
  },
  {
   "category_id": "shot-sizes-angles",
@@ -423,7 +423,7 @@
   "category_id": "lenses-optics",
   "name": "Lenses and Optics",
   "section": "Video and Cinematography",
-  "count": 9
+  "count": 13
  },
  {
   "category_id": "cinematic-lighting",
@@ -435,7 +435,7 @@
   "category_id": "transitions-editing",
   "name": "Transitions and Editing",
   "section": "Video and Cinematography",
-  "count": 23
+  "count": 31
  },
  {
   "category_id": "film-looks-grades",
@@ -448,5 +448,23 @@
   "name": "Explainer Animation Styles",
   "section": "Video and Cinematography",
   "count": 8
+ },
+ {
+  "category_id": "composition",
+  "name": "Composition",
+  "section": "Video and Cinematography",
+  "count": 3
+ },
+ {
+  "category_id": "web-app-design-styles",
+  "name": "Web and App Design Styles",
+  "section": "Design and Motion Styles",
+  "count": 67
+ },
+ {
+  "category_id": "motion-graphics-styles",
+  "name": "Motion Graphics Styles",
+  "section": "Design and Motion Styles",
+  "count": 59
  }
 ]

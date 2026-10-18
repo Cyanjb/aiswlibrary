@@ -54,7 +54,11 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .cta b{color:var(--pink)}
 .crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
 footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;color:var(--soft);font-size:.9rem}
-.card{position:relative}.card .pick{position:absolute;top:14px;right:14px}.card h3{padding-right:74px}
+.card{position:relative}.card .pick{position:absolute;top:14px;right:14px;z-index:2}.card h3{padding-right:74px}
+.card .thumb{display:block;position:relative;margin:-18px -18px 14px;aspect-ratio:16/9;overflow:hidden;border-radius:14px 14px 0 0;background:#0d0b11;border-bottom:1px solid var(--line)}
+.card .thumb img,.card .thumb video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card .thumb+.pick+h3{padding-right:0}
+.card>small{display:block;padding-right:74px}.card .thumb~small{padding-right:0}
 .pick{font:inherit;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:3px 12px;background:#0d0b11;color:var(--soft);cursor:pointer;white-space:nowrap}
 .pick:hover{border-color:var(--teal);color:var(--teal)}
 .pick[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#121016}
@@ -75,6 +79,31 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 
 SKILL_HINT = "Pick keywords as you browse, then press Copy for AI and paste into ChatGPT, Claude or any AI. Copy keywords gives a plain list for Midjourney or Seedance."
 
+ASSETS = os.path.join(DIST, "assets")
+
+def poster_for(m):
+    """A still for a media path: the image itself, or a same-named .jpg beside a video."""
+    if m.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
+        return m
+    jpg = m.rsplit(".", 1)[0] + ".jpg"
+    return jpg if os.path.exists(os.path.join(ASSETS, jpg)) else None
+
+def thumb_of(k):
+    """(still, video) for a card thumbnail, from the keyword's first media item."""
+    media = [m.strip() for m in k.get("images", "").split(";") if m.strip()]
+    if not media:
+        return (None, "")
+    p = poster_for(media[0])
+    return (p, media[0] if media[0].lower().endswith((".mp4", ".webm")) and p else "")
+
+def thumb_html(k, pre):
+    p, v = thumb_of(k)
+    if not p:
+        return ""
+    dv = f' data-video="{html.escape(pre + "assets/" + v)}"' if v else ""
+    return (f'<a class="thumb" href="{pre}keyword/{html.escape(k["slug"])}.html"{dv}>'
+            f'<img src="{html.escape(pre + "assets/" + p)}" alt="" loading="lazy"></a>')
+
 def pick_btn(k):
     return (f'<button type="button" class="pick" aria-pressed="false" data-slug="{html.escape(k["slug"])}" '
             f'data-name="{html.escape(k["name"])}" data-cat="{html.escape(cats_by_id[k["category_id"]]["name"])}" '
@@ -91,7 +120,7 @@ def page(title, desc, body, canonical, depth=0):
 <body><header><div class="wrap"><a class="brand" href="{pre}index.html">AI and See <b>Why</b> · Keyword Library</a></div></header>
 <div class="wrap">{body}</div>
 <footer><div class="wrap">Every keyword tested, explained in plain language, and updated {UPDATED}. Built by Cyan Brown for people who were never shown how. <a href="https://www.aiandseewhy.com">aiandseewhy.com</a></div></footer>
-<script src="{pre}picks.js" defer></script></body></html>"""
+<script src="{pre}picks.js" defer></script><script src="{pre}gallery.js" defer></script></body></html>"""
 
 urls = []
 
@@ -99,7 +128,7 @@ urls = []
 for d in ["category", "keyword", "api"]:
     p = os.path.join(DIST, d)
     if os.path.exists(p): shutil.rmtree(p)
-for f in ["index.html", "sitemap.xml", "robots.txt", "style.css", "picks.js", "llms.txt"]:
+for f in ["index.html", "sitemap.xml", "robots.txt", "style.css", "picks.js", "gallery.js", "llms.txt"]:
     p = os.path.join(DIST, f)
     if os.path.exists(p): os.remove(p)
 os.makedirs(os.path.join(DIST, "category"), exist_ok=True)
@@ -133,12 +162,16 @@ for k in kws:
             for m in media:
                 src = html.escape(f"../assets/{m}")
                 if m.lower().endswith((".mp4", ".webm")):
-                    cells.append(f'<video src="{src}" autoplay muted loop playsinline controls></video>')
+                    p = poster_for(m)
+                    pa = f' poster="{html.escape("../assets/" + p)}"' if p else ""
+                    cells.append(f'<video src="{src}"{pa} autoplay muted loop playsinline controls></video>')
                 else:
                     cells.append(f'<img src="{src}" alt="{html.escape(k["name"])} example" loading="lazy">')
             imgs = '<div class="imgs media">' + "".join(cells) + "</div>"
             if any(m.startswith("style-samples/") for m in media):
                 imgs += '<p class="media-note">Style sample: a code-animated reference for the look, not the output of this prompt. Your AI tool will give its own take.</p>'
+            if any(m.startswith("styles/") for m in media):
+                imgs += '<p class="media-note">Style demo: the same 10-second fake ad (an energy drink for cats) built in every style, so you can compare looks side by side. Built in code, not the output of this prompt.</p>'
         else:
             ph_text = "example clip coming soon" if "seedance" in k.get("works_in", "") else "example coming from the archive"
             imgs = '<div class="imgs">' + ''.join(f'<div class="ph">{ph_text}</div>' for _ in range(4)) + '</div>'
@@ -165,7 +198,7 @@ for c in cats:
     for k in sorted(items, key=lambda x: x["name"]):
         lock = ""
         teaser = k["definition"].split(".")[0] + "."
-        cards += f"""<div class="card">{pick_btn(k)}<h3><a href="../keyword/{k['slug']}.html">{html.escape(k['name'])}</a>{lock}</h3><p>{html.escape(teaser)}</p></div>"""
+        cards += f"""<div class="card">{thumb_html(k, "../")}{pick_btn(k)}<h3><a href="../keyword/{k['slug']}.html">{html.escape(k['name'])}</a>{lock}</h3><p>{html.escape(teaser)}</p></div>"""
     if not items:
         cards = '<div class="card"><p>Entries from the archive are on their way. This category is being migrated from three years of tested posts.</p></div>'
     howto = f'<p class="howto">{SKILL_HINT}</p>' if items else ""
@@ -209,6 +242,7 @@ for k in kws:
         "t": ktags,
         "d": k["definition"].split(".")[0] + ".",
         "D": k["definition"], "e": k["prompt_example"],
+        **({"i": thumb_of(k)[0], "v": thumb_of(k)[1]} if thumb_of(k)[0] else {}),
     })
 chips_html = ""
 for gname, gtags in FILTER_GROUPS:
@@ -242,7 +276,7 @@ function render(){
   });
   nores.style.display = hits.length ? 'none' : '';
   results.innerHTML = hits.map(k=>
-    `<div class="card"><button type="button" class="pick" aria-pressed="false" data-slug="${esc(k.s)}" data-name="${esc(k.n)}" data-cat="${esc(k.c)}" data-def="${esc(k.D)}" data-ex="${esc(k.e)}">+ Pick</button><small>${k.c}</small><h3><a href="keyword/${k.s}.html">${k.n}</a></h3><p>${k.d}</p></div>`
+    `<div class="card">${k.i?`<a class="thumb" href="keyword/${k.s}.html"${k.v?` data-video="assets/${esc(k.v)}"`:''}><img src="assets/${esc(k.i)}" alt="" loading="lazy"></a>`:''}<button type="button" class="pick" aria-pressed="false" data-slug="${esc(k.s)}" data-name="${esc(k.n)}" data-cat="${esc(k.c)}" data-def="${esc(k.D)}" data-ex="${esc(k.e)}">+ Pick</button><small>${k.c}</small><h3><a href="keyword/${k.s}.html">${k.n}</a></h3><p>${k.d}</p></div>`
   ).join('');
   if(window.AISWPicks) AISWPicks.sync();
 }
@@ -285,6 +319,7 @@ urls.append("/index.html")
 
 # Pick tray script (source lives in generator/)
 shutil.copy(os.path.join(ROOT, "picks.js"), os.path.join(DIST, "picks.js"))
+shutil.copy(os.path.join(ROOT, "gallery.js"), os.path.join(DIST, "gallery.js"))
 
 # Machine-readable feed for AI agents (the aisw-keywords skill reads this)
 secs_by_id = {s["section_id"]: s for s in sections}
