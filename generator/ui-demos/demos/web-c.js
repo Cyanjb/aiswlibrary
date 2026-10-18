@@ -477,15 +477,15 @@
   // ---------- 12. magnetic button ----------
   {
     DEMOS['magnetic-button'] = {
-      cycle: 5.5, posterAt: 1.5,
+      cycle: 5.5, posterAt: 3.45,
       draw(ctx, W, H, t) {
         backdrop(ctx, W, H);
         const r = browser(ctx, W, H, BW);
-        const cx = r.x + r.w / 2, cy = r.y + 280, R = 220;
+        const cx = r.x + r.w / 2, cy = r.y + 275, R = 260;
         const far = [r.x + r.w - 90, r.y + r.h - 40];
         const keys = [[0, far[0], far[1]], [0.4, far[0], far[1]], [1.2, cx + 150, cy - 70], [1.8, cx + 135, cy + 55], [2.2, cx + 30, cy + 8], [2.9, cx + 30, cy + 8],
           [3.3, cx - 140, cy - 50], [3.55, cx - 140, cy - 50], [3.85, r.x + 120, r.y + r.h - 30], [4.9, far[0], far[1]], [5.5, far[0], far[1]]];
-        const pull = (mx, my) => { const dx = mx - cx, dy = my - cy, d = Math.hypot(dx, dy); const m = clamp(1 - (d - 40) / (R - 40)); return [dx * 0.45 * m, dy * 0.45 * m, m]; };
+        const pull = (mx, my) => { const dx = mx - cx, dy = my - cy, d = Math.hypot(dx, dy); const m = clamp(1 - (d - 50) / (R - 50)); return [dx * 0.6 * m, dy * 0.6 * m, m]; };
         let [mx, my] = path(t, keys);
         let ox, oy, m;
         const TR = 3.55;
@@ -502,9 +502,12 @@
         text(ctx, 'Ready to start?', cx, r.y + 80, { size: 46, weight: 800, align: 'center' });
         text(ctx, 'We would love to hear from you', cx, r.y + 128, { size: 20, color: C.soft, align: 'center' });
         // faint field ring
-        ctx.beginPath(); ctx.arc(cx, cy, R - 30, 0, 7); ctx.setLineDash([6, 8]);
+        ctx.beginPath(); ctx.arc(cx, cy, 170, 0, 7); ctx.setLineDash([6, 8]);
         ctx.strokeStyle = `rgba(255,95,162,${0.12 + 0.35 * m})`; ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]);
         const bw = 280, bh = 84;
+        // faint outline of the resting spot, so the lean is easy to see
+        const away = clamp(Math.hypot(ox, oy) / 20);
+        if (away > 0.02) { rr(ctx, cx - bw / 2, cy - bh / 2, bw, bh, 42); ctx.setLineDash([5, 6]); ctx.strokeStyle = `rgba(242,237,245,${0.3 * away})`; ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]); }
         ctx.save(); ctx.translate(cx + ox, cy + oy); ctx.scale(1 + sq * 0.1, 1 - sq * 0.16);
         shadow(ctx, 26 + 20 * m, 10 + 6 * m, `rgba(255,95,162,${0.25 + 0.3 * m})`);
         fillRR(ctx, -bw / 2, -bh / 2, bw, bh, 42, C.pink); noShadow(ctx);

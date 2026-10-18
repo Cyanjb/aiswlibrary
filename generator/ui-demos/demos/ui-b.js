@@ -145,8 +145,8 @@
         }
         ctx.globalAlpha = 1;
       };
-      if (k < 1) drawGrid(prev, 1 - k, -dir * 60 * k);
-      drawGrid(page, k, dir * 60 * (1 - k));
+      if (k < 0.5) drawGrid(prev, 1 - 2 * k, -dir * 70 * 2 * k);
+      else drawGrid(page, 2 * k - 1, dir * 70 * (2 - 2 * k));
       // pager row
       const bw = 72, gap = 14, n = 7, rowW = n * bw + (n - 1) * gap, rx = r.x + (r.w - rowW) / 2, ry = r.y + r.h - 98;
       const bxOf = i => rx + i * (bw + gap);
@@ -195,10 +195,9 @@
         const top = r.y + nh + 1 - mh + shown;
         shadow(ctx, 30, 12); ctx.fillStyle = C.card2; ctx.fillRect(r.x, top, r.w, mh); noShadow(ctx);
         items.forEach((s, i) => {
-          const a = ep(t, 1.2 + i * 0.07, 1.55 + i * 0.07) - ep(t, 3.35, 3.6);
+          const a = t < 2.5 ? ep(t, 1.1 + i * 0.06, 1.45 + i * 0.06) : 1;
           const y = top + 10 + i * ih;
-          ctx.globalAlpha = clamp(a);
-          text(ctx, s, r.x + 60 + (1 - a) * -20, y + ih / 2, { size: 28, weight: 700, color: i === 0 ? C.pink : C.ink });
+          text(ctx, s, r.x + 60 + (1 - a) * -24, y + ih / 2, { size: 28, weight: 700, color: i === 0 ? C.pink : C.ink });
           chevron(ctx, r.x + r.w - 70, y + ih / 2, 8, 1, C.dim, 3);
           ctx.globalAlpha = 1;
           if (i < items.length - 1) { ctx.fillStyle = C.line; ctx.fillRect(r.x + 60, y + ih, r.w - 120, 1); }
@@ -270,11 +269,11 @@
         text(ctx, pages[idx][1], r.x + 44, r.y + 146, { size: 34, weight: 800 });
         const seedH = [0, 2, 4, 0][idx];
         for (let i = 0; i < 4; i++) picture(ctx, r.x + 44 + i * 196, r.y + 186, 180, 150, seedH + i, 12);
-        lines(ctx, r.x + 44, r.y + 360, 520, 3, { seed: idx * 5 });
+        lines(ctx, r.x + 44, r.y + 360, 520, 3, { seed: [0, 1, 2, 0][idx] * 5 });
         ctx.globalAlpha = 1;
       };
-      if (k < 1) body(Math.max(0, pi - 1), 1 - k);
-      body(pi, k);
+      if (k < 0.5) body(Math.max(0, pi - 1), 1 - 2 * k);
+      else body(pi, 2 * k - 1);
       ctx.restore();
       const tile = [r.x + 44 + 100, r.y + 270], rest = [r.x + 260, r.y + 410];
       const lib = [boxes[1].x + boxes[1].w / 2 + 6, y + 6];
@@ -336,12 +335,12 @@
       const cx = r.x + r.w / 2, cy = r.y + r.h / 2 + 12;
       shadow(ctx, 36, 14); fillRR(ctx, cx - 290, cy - 190, 580, 380, 26, C.card2); noShadow(ctx);
       fillRR(ctx, cx - 290, cy - 190, 580, 380, 26, null, C.line);
-      const done = ep(t, 2.5, 2.9), reset = ep(t, 4.3, 4.7);
+      const done = t < 4.3 ? ep(t, 2.5, 2.9) : 0;
       const sy = cy - 34, R = 88;
       // spinner (fades out as it completes, back in on reset)
       const rot = t * TAU * 1.2;
       const sweep = lerp(TAU * (0.22 + 0.2 * (0.5 + 0.5 * Math.sin(t * TAU * 0.8))), TAU, done);
-      const sAlpha = t < 4.3 ? 1 - ep(t, 2.95, 3.15) : reset;
+      const sAlpha = t < 4.3 ? 1 - ep(t, 2.95, 3.15) : ep(t, 4.55, 4.8);
       if (sAlpha > 0.01) {
         ctx.globalAlpha = sAlpha;
         circ(ctx, cx, sy, R, null, C.line, 15);
@@ -350,15 +349,15 @@
         ctx.globalAlpha = 1;
       }
       // check badge
-      const cs = t < 4.3 ? ep(t, 2.9, 3.3, ease.outBack) : 1 - reset;
+      const cs = t < 4.3 ? ep(t, 2.9, 3.3, ease.outBack) : 1 - ep(t, 4.3, 4.55);
       if (cs > 0.01) {
         circ(ctx, cx, sy, R * cs, C.teal);
         check(ctx, cx, sy, 92 * cs, ep(t, 3.05, 3.45), C.bg, 13);
       }
       // label
       const dots = '...'.slice(0, Math.floor(t * 2.5) % 4);
-      const la = t < 2.9 ? 1 : t < 4.4 ? 0 : ep(t, 4.4, 4.7);
-      const da = t < 4.3 ? ep(t, 3.0, 3.3) : 1 - reset;
+      const la = t < 2.9 ? 1 : t < 4.55 ? 0 : ep(t, 4.55, 4.8);
+      const da = t < 4.3 ? ep(t, 3.0, 3.3) : 1 - ep(t, 4.3, 4.55);
       ctx.globalAlpha = la * (t < 2.9 ? 1 - ep(t, 2.7, 2.9) : 1);
       text(ctx, 'Loading' , cx - 4, sy + 142, { size: 34, weight: 800, align: 'center' });
       text(ctx, dots, cx + measure(ctx, 'Loading', 34, 800) / 2 - 3, sy + 142, { size: 34, weight: 800 });
@@ -496,7 +495,7 @@
       fillRR(ctx, x0, y - 5, (x1 - x0) * lineP / 3, 10, 5, g);
       for (let i = 0; i < 4; i++) {
         const d = doneOf(i), x = xs(i);
-        const active = i === current && d < 0.5 && t < 5.2;
+        const active = i === current && d < 0.5;
         circ(ctx, x, y, R + 6, C.card);
         circ(ctx, x, y, R, C.card2, active ? C.pink : C.line, active ? 4 : 2);
         if (active) circ(ctx, x, y, R + 11, null, 'rgba(255,95,162,0.3)', 3);

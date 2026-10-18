@@ -206,8 +206,13 @@
       ctx.globalAlpha = 1 - chosen; text(ctx, 'Choose a style', x0 + 22, by + bh / 2, { size: 20, color: C.soft });
       ctx.globalAlpha = chosen; text(ctx, 'Pixel art', x0 + 22, by + bh / 2, { size: 21, weight: 700 }); ctx.globalAlpha = 1;
       chevron(ctx, x0 + bw - 32, by + bh / 2, 8, open * Math.PI, C.ink);
+      // more of the form underneath, which the open list covers
+      text(ctx, 'Size', x0, r.y + 226, { size: 18, weight: 600, color: C.soft });
+      fillRR(ctx, x0, r.y + 246, bw, 60, 12, C.card2, C.line);
+      text(ctx, 'Square', x0 + 22, r.y + 276, { size: 20, color: C.ink });
+      button(ctx, x0, r.y + 340, 180, 56, 'Create', { size: 20 });
       // preview card on the right follows the choice
-      const px = r.x + 520, py = r.y + 40, pw = 280, ph = 300;
+      const px = r.x + 520, py = r.y + 40, pw = 280, ph = 356;
       fillRR(ctx, px, py, pw, ph, 18, C.card2, C.line);
       fillRR(ctx, px + 20, py + 20, pw - 40, ph - 90, 12, C.bg);
       ctx.globalAlpha = 1 - chosen; text(ctx, 'No style yet', px + pw / 2, py + 20 + (ph - 90) / 2, { size: 18, color: C.dim, align: 'center' });
@@ -336,7 +341,7 @@
 
   /* ---------- 9. image carousel ---------- */
   DEMOS['image-carousel'] = {
-    cycle: 6, posterAt: 1.2,
+    cycle: 6, posterAt: 2.0,
     draw(ctx, W, H, t) {
       const r = win(ctx, W, H);
       clipTo(ctx, r, 0);
