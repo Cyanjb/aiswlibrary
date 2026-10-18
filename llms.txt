@@ -1,0 +1,21 @@
+# AI and See Why Keyword Library
+
+> Plain-language library of tested AI prompt keywords for image and video models (Midjourney, Nano Banana Pro, GPT Image, Seedance and more). Each keyword has a definition, when to use it, an example prompt phrase, pairings, the tools it works in, and example images or clips.
+
+## For AI agents
+- Full feed (JSON): https://library.aiandseewhy.com/api/v1/keywords.json
+- Categories (JSON): https://library.aiandseewhy.com/api/v1/categories.json
+- Fallback if the domain is unreachable: https://raw.githubusercontent.com/Cyanjb/aiswlibrary/main/api/v1/keywords.json
+- A picks link looks like https://library.aiandseewhy.com/index.html?pick=golden-hour,push-in and lists keyword slugs in the order the person chose them.
+- Use the keyword names as written. Keep the person's subject; the keywords describe style, light, camera and edit.
+
+## Sections
+- Styles and Keywords
+- Color Library
+- Storytelling
+- Design and Industry
+- Photography
+- Public Domain Artists
+- Advanced Keywords
+- Sref Style Codes
+- Video and Cinematography
