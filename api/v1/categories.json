@@ -3,13 +3,13 @@
   "category_id": "art-styles-movements",
   "name": "Art Styles and Movements",
   "section": "Styles and Keywords",
-  "count": 148
+  "count": 154
  },
  {
   "category_id": "illustration-and-animation",
   "name": "Illustration and Animation",
   "section": "Styles and Keywords",
-  "count": 8
+  "count": 9
  },
  {
   "category_id": "techniques",
@@ -27,7 +27,7 @@
   "category_id": "world-culture-styles",
   "name": "World Culture Styles",
   "section": "Styles and Keywords",
-  "count": 8
+  "count": 12
  },
  {
   "category_id": "time-periods-and-eras",
@@ -51,7 +51,7 @@
   "category_id": "anime-and-manga",
   "name": "Anime and Manga",
   "section": "Styles and Keywords",
-  "count": 8
+  "count": 10
  },
  {
   "category_id": "style-suffixes",
@@ -99,7 +99,7 @@
   "category_id": "renders",
   "name": "Renders",
   "section": "Styles and Keywords",
-  "count": 8
+  "count": 9
  },
  {
   "category_id": "textures",
@@ -111,7 +111,7 @@
   "category_id": "patterns",
   "name": "Patterns",
   "section": "Styles and Keywords",
-  "count": 8
+  "count": 9
  },
  {
   "category_id": "other",
@@ -177,7 +177,7 @@
   "category_id": "comic-books",
   "name": "Comic Books",
   "section": "Storytelling",
-  "count": 8
+  "count": 9
  },
  {
   "category_id": "characters-public-domain",
@@ -369,7 +369,7 @@
   "category_id": "pd-painters",
   "name": "Painters",
   "section": "Public Domain Artists",
-  "count": 8
+  "count": 9
  },
  {
   "category_id": "pd-illustrators",
@@ -442,5 +442,11 @@
   "name": "Film Looks and Grades",
   "section": "Video and Cinematography",
   "count": 7
+ },
+ {
+  "category_id": "explainer-animation",
+  "name": "Explainer Animation Styles",
+  "section": "Video and Cinematography",
+  "count": 8
  }
 ]

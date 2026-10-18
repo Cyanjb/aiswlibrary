@@ -31,6 +31,9 @@ Term + plain definition + when to use it + example prompt phrase. Beginner voice
 Add a row to keywords.csv (status=published), rebuild, upload changed files to GitHub. Netlify deploys automatically.
 Rows with source=claude-2026-10-18 were written by Claude to fill empty categories. When the Discord archive is migrated, a tested archive post replaces the Claude row for the same keyword (keep the slug).
 
+## Style samples
+`assets/style-samples/` holds code-animated style clips made with the huashu-art-motion skill (rows with source=huashu-art-motion-2026-10-18, added by `generator/style_samples_batch.py`). They show the look of a style, not a prompt result, so build.py captions every clip from that folder as a style sample. When a real tested result exists for the keyword, add it to `images` ahead of the sample (or replace it).
+
 ## Migrating the Discord archive
 1. Third party: DiscordChatExporter (free, github.com/Tyrrrz/DiscordChatExporter) exports each forum channel to JSON with image attachments
 2. Hand the export folder to a Claude session: it parses posts into keywords.csv rows (matching category by channel name) and collects the 4-image grids

@@ -1,7 +1,7 @@
 {
  "library": "AI and See Why Keyword Library",
  "updated": "July 2026",
- "count": 738,
+ "count": 763,
  "keywords": [
   {
    "slug": "16mm-film-look",
@@ -698,7 +698,9 @@
     "pattern",
     "romantic"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/alphonse-mucha.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/alphonse-mucha.html"
   },
   {
@@ -728,6 +730,38 @@
    "url": "https://library.aiandseewhy.com/keyword/alternative.html"
   },
   {
+   "slug": "american-realism",
+   "name": "American Realism",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "Quiet American scenes from the 1920s to the 1950s: diners, hotel rooms and city windows with hard-edged sunlight, flat shadows and people lost in their own thoughts.",
+   "when_to_use": "Use for lonely, reflective moments, urban stillness and stories told in a single look out of a window.",
+   "prompt_example": "\"woman by a window in morning sun, american realism, hard light across an empty room\"",
+   "pairs_well_with": [
+    "muted palette",
+    "golden hour",
+    "oil painting"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "painting",
+    "moody",
+    "urban",
+    "dramatic light"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/american-realism.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/american-realism.html"
+  },
+  {
    "slug": "analog",
    "name": "Analog",
    "category": "Art Styles and Movements",
@@ -754,6 +788,38 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/analog.html"
+  },
+  {
+   "slug": "analytic-cubism",
+   "name": "Analytic Cubism",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "Early 1900s painting that breaks people and objects into overlapping see-through shards, showing several sides at once, mostly in browns, greys and muted ochre.",
+   "when_to_use": "Use for thoughtful, puzzle-like portraits and still lifes, or to show one subject from many angles at once.",
+   "prompt_example": "\"cafe table with a guitar and a newspaper, analytic cubism, muted browns and greys\"",
+   "pairs_well_with": [
+    "oil painting",
+    "muted palette",
+    "fauvism"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "painting",
+    "abstract",
+    "neutral colors",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/analytic-cubism.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/analytic-cubism.html"
   },
   {
    "slug": "anamorphic",
@@ -891,6 +957,69 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/angura-kei.html"
+  },
+  {
+   "slug": "anime-light-rays",
+   "name": "Anime Light Rays",
+   "category": "Anime and Manga",
+   "category_id": "anime-and-manga",
+   "section": "Styles and Keywords",
+   "definition": "The glowing light of modern anime films: towering clouds, beams of sun slicing through windows, soft lens glow and tiny floating specks of light, all brighter and cleaner than real life.",
+   "when_to_use": "Use for hopeful, emotional moments, city skies after rain and anything that should feel like a movie poster for a feeling.",
+   "prompt_example": "\"empty classroom at sunset, anime light rays through the window, floating dust specks\"",
+   "pairs_well_with": [
+    "volumetric light",
+    "golden hour",
+    "cel shading"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "japanese style",
+    "golden light",
+    "glow",
+    "dreamy"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/anime-light-rays.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/anime-light-rays.html"
+  },
+  {
+   "slug": "anime-watercolor-background",
+   "name": "Anime Watercolor Background",
+   "category": "Anime and Manga",
+   "category_id": "anime-and-manga",
+   "section": "Styles and Keywords",
+   "definition": "Soft hand-painted backgrounds from classic Japanese animated films: see-through watercolor washes, puffy summer clouds, grass that sways and sunlight dappling through leaves.",
+   "when_to_use": "Use for cozy countryside scenes, nostalgic summer days and any world that should feel gentle and lived-in.",
+   "prompt_example": "\"hillside cottage on a breezy summer afternoon, anime watercolor background, puffy clouds\"",
+   "pairs_well_with": [
+    "watercolor",
+    "golden hour",
+    "cel shading"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "japanese style",
+    "painting",
+    "cozy",
+    "nature",
+    "dreamy"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/anime-watercolor-background.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/anime-watercolor-background.html"
   },
   {
    "slug": "ansel-adams",
@@ -1808,6 +1937,37 @@
    "url": "https://library.aiandseewhy.com/keyword/bauhaus.html"
   },
   {
+   "slug": "bauhaus-graphic-design",
+   "name": "Bauhaus Graphic Design",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "The 1920s German design school look: circles, squares and triangles in red, yellow, blue and black, strong grids and clean sans-serif lettering.",
+   "when_to_use": "Use for posters, logos and layouts that should feel smart, modern and built with a ruler.",
+   "prompt_example": "\"exhibition poster of a cat made of circles and triangles, bauhaus graphic design, red yellow blue\"",
+   "pairs_well_with": [
+    "hard-edge painting",
+    "typographic art",
+    "bauhaus"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "abstract",
+    "words and letters",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/bauhaus-graphic-design.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/bauhaus-graphic-design.html"
+  },
+  {
    "slug": "beadwork",
    "name": "Beadwork",
    "category": "Art Handicrafts",
@@ -1917,7 +2077,9 @@
     "vibrant colors",
     "drawing"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/ben-day-dots.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/ben-day-dots.html"
   },
   {
@@ -2990,6 +3152,37 @@
    "url": "https://library.aiandseewhy.com/keyword/cassette-tape.html"
   },
   {
+   "slug": "cave-painting",
+   "name": "Cave Painting",
+   "category": "World Culture Styles",
+   "category_id": "world-culture-styles",
+   "section": "Styles and Keywords",
+   "definition": "The oldest art we know: animals drawn in red ochre and charcoal on rough rock walls, stencilled handprints, and flickering firelight bringing it all to life.",
+   "when_to_use": "Use for ancient, primal moods, origin stories and any subject that should feel timeless and deeply human.",
+   "prompt_example": "\"herd of horses running across a rock wall, cave painting, red ochre and charcoal\"",
+   "pairs_well_with": [
+    "weathered",
+    "candlelight",
+    "charcoal sketch"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "world cultures",
+    "painting",
+    "texture",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/cave-painting.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/cave-painting.html"
+  },
+  {
    "slug": "cel-shaded-render",
    "name": "Cel-Shaded Render",
    "category": "Renders",
@@ -3487,8 +3680,41 @@
     "black and white",
     "calm"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/chinese-ink-wash-painting.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/chinese-ink-wash-painting.html"
+  },
+  {
+   "slug": "chinese-shadow-puppetry",
+   "name": "Chinese Shadow Puppetry",
+   "category": "World Culture Styles",
+   "category_id": "world-culture-styles",
+   "section": "Styles and Keywords",
+   "definition": "Translucent leather puppets lit from behind a paper screen: lace-like cut patterns, glowing color, jointed limbs moved on rods and the warm flicker of an oil lamp.",
+   "when_to_use": "Use for folk tales, theatrical storytelling and scenes that should feel handmade, warm and ancient.",
+   "prompt_example": "\"warrior and dragon behind a glowing paper screen, chinese shadow puppetry, translucent leather\"",
+   "pairs_well_with": [
+    "candlelight",
+    "woodblock print",
+    "jewel tones"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "world cultures",
+    "craft",
+    "glow",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/chinese-shadow-puppetry.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/chinese-shadow-puppetry.html"
   },
   {
    "slug": "chiptune",
@@ -3687,7 +3913,9 @@
     "dreamy",
     "nature"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/claude-monet.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/claude-monet.html"
   },
   {
@@ -3916,6 +4144,33 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/collage-and-paint.html"
+  },
+  {
+   "slug": "collage-explainer",
+   "name": "Collage Explainer",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "The investigative news-video look: real clippings, photos and charts laid on a desk, with red lines and highlighter drawn on as the camera moves from clue to clue.",
+   "when_to_use": "Use for arguments built on evidence, like news stories, history and how-it-really-happened breakdowns.",
+   "prompt_example": "\"newspaper clippings and a chart on a desk, red marker circles the key number, collage explainer\"",
+   "pairs_well_with": [
+    "whiteboard animation",
+    "data chart animation"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "texture",
+    "words and letters"
+   ],
+   "media": [],
+   "url": "https://library.aiandseewhy.com/keyword/collage-explainer.html"
   },
   {
    "slug": "colour-match-cut",
@@ -4946,6 +5201,35 @@
    "url": "https://library.aiandseewhy.com/keyword/dashiki.html"
   },
   {
+   "slug": "data-chart-animation",
+   "name": "Data Chart Animation",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "The newsroom way to animate numbers: the axes draw in first, then the data grows into place, and only one thing gets highlighted. Bars start at zero, one color for the star, grey for the rest.",
+   "when_to_use": "Use for any number you want people to remember, like growth, price changes or before-and-after comparisons.",
+   "prompt_example": "\"bar chart grows up from zero, one bar highlighted in red, clean finance chart animation\"",
+   "pairs_well_with": [
+    "infographic",
+    "math morph explainer"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "tech",
+    "words and letters"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/data-chart-animation.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/data-chart-animation.html"
+  },
+  {
    "slug": "david-hicks",
    "name": "David Hicks",
    "category": "Interior Designers",
@@ -5668,6 +5952,37 @@
    "url": "https://library.aiandseewhy.com/keyword/dual-kawaii.html"
   },
   {
+   "slug": "dunhuang-mural",
+   "name": "Dunhuang Mural",
+   "category": "World Culture Styles",
+   "category_id": "world-culture-styles",
+   "section": "Styles and Keywords",
+   "definition": "Buddhist cave paintings from the Silk Road in China: earthy red backgrounds, mineral greens and blues, flying celestial figures trailing long ribbons, and paint worn and flaking with age.",
+   "when_to_use": "Use for graceful, spiritual scenes, flowing fabric and anything that should feel ancient, sacred and softly faded.",
+   "prompt_example": "\"celestial dancer with flowing ribbons, dunhuang mural, faded mineral colors\"",
+   "pairs_well_with": [
+    "weathered",
+    "chinese ink wash painting",
+    "jewel tones"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "world cultures",
+    "painting",
+    "elegant",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/dunhuang-mural.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/dunhuang-mural.html"
+  },
+  {
    "slug": "duochrome",
    "name": "Duochrome",
    "category": "Advanced Color Spectrum",
@@ -5785,6 +6100,37 @@
    "url": "https://library.aiandseewhy.com/keyword/dutch-angle.html"
   },
   {
+   "slug": "early-cgi",
+   "name": "Early CGI",
+   "category": "Renders",
+   "category_id": "renders",
+   "section": "Styles and Keywords",
+   "definition": "The look of 1990s computer graphics: shiny plastic surfaces, chrome balls, checkerboard floors with perfect reflections and a slightly toy-like, too-clean finish.",
+   "when_to_use": "Use for retro tech nostalgia, music-video throwbacks and playful 3D scenes that wink at the dawn of computer art.",
+   "prompt_example": "\"chrome sphere on a checkerboard floor, early cgi, 1993 render\"",
+   "pairs_well_with": [
+    "ray tracing",
+    "iridescent",
+    "chiptune"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "3d",
+    "retro",
+    "tech",
+    "weird and wonderful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/early-cgi.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/early-cgi.html"
+  },
+  {
    "slug": "eco-art",
    "name": "Eco Art",
    "category": "Art Styles and Movements",
@@ -5890,7 +6236,9 @@
     "spooky",
     "vibrant colors"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/edvard-munch.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/edvard-munch.html"
   },
   {
@@ -5948,6 +6296,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/egg-chair.html"
+  },
+  {
+   "slug": "egyptian-tomb-painting",
+   "name": "Egyptian Tomb Painting",
+   "category": "World Culture Styles",
+   "category_id": "world-culture-styles",
+   "section": "Styles and Keywords",
+   "definition": "Ancient Egyptian wall art: figures with side-on faces and front-facing eyes, flat bright colors, crisp outlines and rows of hieroglyphs in neat bands.",
+   "when_to_use": "Use for stylized storytelling scenes, mythic portraits and any subject that should feel ceremonial and ancient.",
+   "prompt_example": "\"cat sipping tea at a low table, egyptian tomb painting, hieroglyph border\"",
+   "pairs_well_with": [
+    "gold leaf",
+    "jewel tones",
+    "iconography"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "world cultures",
+    "painting",
+    "gold",
+    "vintage"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/egyptian-tomb-painting.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/egyptian-tomb-painting.html"
   },
   {
    "slug": "elderly",
@@ -7090,6 +7469,67 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/flat-lay.html"
+  },
+  {
+   "slug": "flat-science-explainer",
+   "name": "Flat Science Explainer",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "Bright flat shapes with no outlines in a softly glowing world, where the camera zooms between the tiny and the enormous, from a single cell to a whole planet.",
+   "when_to_use": "Use for science, space, biology and big-picture ideas where scale is the story.",
+   "prompt_example": "\"camera zooms from a drop of seawater into a glowing diatom, flat science explainer, no outlines\"",
+   "pairs_well_with": [
+    "flat vector illustration",
+    "math morph explainer"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "tech",
+    "vibrant colors",
+    "tiny worlds"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/flat-science-explainer.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/flat-science-explainer.html"
+  },
+  {
+   "slug": "flat-vector-illustration",
+   "name": "Flat Vector Illustration",
+   "category": "Illustration and Animation",
+   "category_id": "illustration-and-animation",
+   "section": "Styles and Keywords",
+   "definition": "Today's clean digital illustration: solid color shapes with no outlines, a soft grain texture, friendly characters in expressive poses and plenty of breathing room.",
+   "when_to_use": "Use for explainers, app and brand graphics, editorial spots and characters that should feel modern and approachable.",
+   "prompt_example": "\"woman watering plants on a sunny balcony, flat vector illustration, soft grain texture\"",
+   "pairs_well_with": [
+    "saas flat illustration",
+    "pastel palette",
+    "cartoon"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "drawing",
+    "playful",
+    "tech",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/flat-vector-illustration.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/flat-vector-illustration.html"
   },
   {
    "slug": "floating-embers",
@@ -8436,7 +8876,9 @@
     "pattern",
     "romantic"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/gustav-klimt.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/gustav-klimt.html"
   },
   {
@@ -8771,6 +9213,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/henri-cartier-bresson.html"
+  },
+  {
+   "slug": "henri-matisse",
+   "name": "Henri Matisse",
+   "category": "Painters",
+   "category_id": "pd-painters",
+   "section": "Public Domain Artists",
+   "definition": "(1869-1954) French painter who, late in life, made bright paper cut-outs: shapes snipped from hand-painted paper, seaweed forms, stars and dancers in pure, joyful color.",
+   "when_to_use": "Use for bold, cheerful compositions with simple shapes, posters and anything that should feel like a celebration.",
+   "prompt_example": "\"swimmers among seaweed shapes, in the style of Henri Matisse paper cut-outs\"",
+   "pairs_well_with": [
+    "fauvism",
+    "jewel tones",
+    "ben-day dots"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "painting",
+    "vibrant colors",
+    "playful",
+    "pattern"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/henri-matisse.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/henri-matisse.html"
   },
   {
    "slug": "herringbone",
@@ -9328,7 +9801,9 @@
     "elegant",
     "painting"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/illuminated-manuscript.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/illuminated-manuscript.html"
   },
   {
@@ -9497,6 +9972,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/infinity-mirror.html"
+  },
+  {
+   "slug": "infinity-polka-dots",
+   "name": "Infinity Polka Dots",
+   "category": "Patterns",
+   "category_id": "patterns",
+   "section": "Styles and Keywords",
+   "definition": "Dots everywhere: bold polka dots covering walls, floors, objects and people until everything melts into one endless pattern, often red and white or yellow and black.",
+   "when_to_use": "Use for immersive, playful installation scenes, statement fashion and dreamy rooms that feel like they go on forever.",
+   "prompt_example": "\"room covered in red polka dots with mirrored walls, infinity polka dots\"",
+   "pairs_well_with": [
+    "ben-day dots",
+    "surrealist pop",
+    "kinetic art"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "pattern",
+    "playful",
+    "vibrant colors",
+    "weird and wonderful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/infinity-polka-dots.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/infinity-polka-dots.html"
   },
   {
    "slug": "infographic",
@@ -10316,6 +10822,37 @@
    "url": "https://library.aiandseewhy.com/keyword/kente-cloth.html"
   },
   {
+   "slug": "keynote-reveal",
+   "name": "Keynote Reveal",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "Product-launch presentation style: one idea per screen, a soft glowing background, frosted-glass cards and big numbers that land the moment they're mentioned.",
+   "when_to_use": "Use for software tutorials, feature announcements and showing off a product or a result.",
+   "prompt_example": "\"giant number 8 fades up on a dark navy background, frosted glass card, product keynote style\"",
+   "pairs_well_with": [
+    "kinetic typography",
+    "data chart animation"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "tech",
+    "elegant",
+    "words and letters"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/keynote-reveal.mp4",
+    "https://library.aiandseewhy.com/assets/style-samples/keynote-reveal-fullscreen.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/keynote-reveal.html"
+  },
+  {
    "slug": "kimono",
    "name": "Kimono",
    "category": "Worldwide Fashion",
@@ -10368,6 +10905,35 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/kinetic-art.html"
+  },
+  {
+   "slug": "kinetic-typography",
+   "name": "Kinetic Typography",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "Words are the actors: the key word slams onto the screen on the beat, supporting words slide up from below, and there's only ever one thing to read at a time.",
+   "when_to_use": "Use for openers, quotes, lists and short-form video where the words carry the message.",
+   "prompt_example": "\"the word AGENTS slams onto a black screen in bold yellow, kinetic typography\"",
+   "pairs_well_with": [
+    "typographic art",
+    "keynote reveal"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "words and letters",
+    "fast and exciting"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/kinetic-typography.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/kinetic-typography.html"
   },
   {
    "slug": "kintsugi",
@@ -12068,6 +12634,36 @@
     "https://library.aiandseewhy.com/assets/clips/x-match-action.mp4"
    ],
    "url": "https://library.aiandseewhy.com/keyword/match-on-action.html"
+  },
+  {
+   "slug": "math-morph-explainer",
+   "name": "Math Morph Explainer",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "The calm style of popular math videos: a dark background, one idea on screen at a time, and shapes that smoothly morph from one concept into the next, with each idea keeping its own color.",
+   "when_to_use": "Use when explaining how something works step by step, like an equation, an algorithm or how an AI model learns.",
+   "prompt_example": "\"dark background, a glowing curve smoothly morphs into a bar chart, math explainer animation\"",
+   "pairs_well_with": [
+    "kinetic typography",
+    "data chart animation"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "tech",
+    "abstract",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/math-morph-explainer.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/math-morph-explainer.html"
   },
   {
    "slug": "maximalist-interior",
@@ -14924,6 +15520,38 @@
    "url": "https://library.aiandseewhy.com/keyword/pop-kei.html"
   },
   {
+   "slug": "pop-line-figures",
+   "name": "Pop Line Figures",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "Simple figures drawn with thick, even black lines and flat bright colors, surrounded by little radiating motion lines so they look like they're dancing or buzzing.",
+   "when_to_use": "Use for upbeat murals, music and party graphics, and any message about energy, love or togetherness.",
+   "prompt_example": "\"crowd of dancing figures with motion lines, pop line figures, bold black outlines, yellow background\"",
+   "pairs_well_with": [
+    "graffiti pop art",
+    "doodle",
+    "line drawing"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "drawing",
+    "playful",
+    "vibrant colors",
+    "urban"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/pop-line-figures.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/pop-line-figures.html"
+  },
+  {
    "slug": "post-conceptualism",
    "name": "Post Conceptualism",
    "category": "Art Styles and Movements",
@@ -16259,7 +16887,9 @@
     "black and white",
     "playful"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/rubber-hose-animation.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/rubber-hose-animation.html"
   },
   {
@@ -16706,7 +17336,9 @@
     "elegant",
     "moody"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/sfumato.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/sfumato.html"
   },
   {
@@ -16989,6 +17621,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/silhouette.html"
+  },
+  {
+   "slug": "silver-age-comics",
+   "name": "Silver Age Comics",
+   "category": "Comic Books",
+   "category_id": "comic-books",
+   "section": "Storytelling",
+   "definition": "Comic books from the late 1950s to about 1970: cosmic heroes, blocky muscular action, crackling energy dots, big sound-effect lettering and four-color printing.",
+   "when_to_use": "Use for explosive action, sci-fi heroes and anything that needs a loud, joyful comic-book bang.",
+   "prompt_example": "\"hero bursting through a wall, silver age comics, crackling energy dots, KRAKOOM lettering\"",
+   "pairs_well_with": [
+    "golden age comics",
+    "ben-day dots",
+    "splash page"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "retro",
+    "vintage",
+    "vibrant colors",
+    "drawing"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/silver-age-comics.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/silver-age-comics.html"
   },
   {
    "slug": "silver-hair",
@@ -18042,6 +18705,35 @@
    "url": "https://library.aiandseewhy.com/keyword/storybook-illustration.html"
   },
   {
+   "slug": "storytime-animation",
+   "name": "Storytime Animation",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "The story-channel cartoon: a simple character with thick outlines snaps between a few poses, cuts to a big reaction close-up and holds still for the punchline.",
+   "when_to_use": "Use for personal stories, funny mishaps and talking-to-camera content where the voice is the star.",
+   "prompt_example": "\"cartoon girl with big glasses shrugs at a computer full of code, storytime animation, thick outlines\"",
+   "pairs_well_with": [
+    "cartoon",
+    "flat vector illustration"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "drawing",
+    "playful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/storytime-animation.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/storytime-animation.html"
+  },
+  {
    "slug": "street-tacos",
    "name": "Street Tacos",
    "category": "Food",
@@ -18186,6 +18878,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/sunflower.html"
+  },
+  {
+   "slug": "surrealism",
+   "name": "Surrealism",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "Dream logic painted with realistic detail: melting clocks, impossible deserts, long shadows and ordinary objects behaving in ways that make no sense.",
+   "when_to_use": "Use for dreams, strange feelings and ideas you can't show literally.",
+   "prompt_example": "\"melting pocket watch draped over a tree branch in a desert at dusk, surrealism\"",
+   "pairs_well_with": [
+    "dreamscape",
+    "surrealist pop",
+    "oil painting"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "painting",
+    "weird and wonderful",
+    "dreamy"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/surrealism.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/surrealism.html"
   },
   {
    "slug": "surrealist-pop",
@@ -19520,6 +20243,37 @@
    "url": "https://library.aiandseewhy.com/keyword/vantablack.html"
   },
   {
+   "slug": "vaporwave",
+   "name": "Vaporwave",
+   "category": "Art Styles and Movements",
+   "category_id": "art-styles-movements",
+   "section": "Styles and Keywords",
+   "definition": "Internet nostalgia from the 2010s: pink and teal neon, a striped setting sun, a grid floor rolling to the horizon, VHS fuzz and Greek statues in a shopping-mall daydream.",
+   "when_to_use": "Use for retro-future music art, playful tech nostalgia and anything that should feel like 1987 seen through a dream.",
+   "prompt_example": "\"palm trees and a striped sunset over a neon grid, vaporwave, VHS glitch\"",
+   "pairs_well_with": [
+    "synthwave",
+    "neon glow",
+    "chiptune"
+   ],
+   "works_in": [
+    "midjourney",
+    "nano-banana-pro",
+    "gpt-image-2",
+    "seedance"
+   ],
+   "tags": [
+    "art style",
+    "retro",
+    "neon light",
+    "pink"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/vaporwave.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/vaporwave.html"
+  },
+  {
    "slug": "vector-art",
    "name": "Vector Art",
    "category": "Illustration and Animation",
@@ -19688,7 +20442,9 @@
     "night",
     "texture"
    ],
-   "media": [],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/vincent-van-gogh.mp4"
+   ],
    "url": "https://library.aiandseewhy.com/keyword/vincent-van-gogh.html"
   },
   {
@@ -20106,6 +20862,37 @@
     "https://library.aiandseewhy.com/assets/clips/x-m-whip.mp4"
    ],
    "url": "https://library.aiandseewhy.com/keyword/whip-pan.html"
+  },
+  {
+   "slug": "whiteboard-animation",
+   "name": "Whiteboard Animation",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "A hand-drawn explainer where a pen sketches simple pictures, arrows and words on a board while the narrator talks, then pulls back to show the whole idea as one map.",
+   "when_to_use": "Use to explain processes, relationships and step-by-step ideas alongside a voiceover.",
+   "prompt_example": "\"marker draws a clock, an arrow and a lightbulb on a chalkboard, whiteboard animation\"",
+   "pairs_well_with": [
+    "doodle",
+    "line drawing",
+    "flowchart"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "drawing",
+    "words and letters",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/whiteboard-animation.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/whiteboard-animation.html"
   },
   {
    "slug": "whiteboard-brainstorm",
