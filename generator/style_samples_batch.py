@@ -135,7 +135,7 @@ NEW = [
  "The investigative news-video look: real clippings, photos and charts laid on a desk, with red lines and highlighter drawn on as the camera moves from clue to clue.",
  "Use for arguments built on evidence, like news stories, history and how-it-really-happened breakdowns.",
  "\"newspaper clippings and a chart on a desk, red marker circles the key number, collage explainer\"",
- "whiteboard animation;data chart animation", VIDEO_TOOLS, "", "video;texture;words and letters"),
+ "whiteboard animation;data chart animation", VIDEO_TOOLS, "collage-explainer.mp4", "video;texture;words and letters"),
 ("flat-science-explainer", "Flat Science Explainer", "explainer-animation",
  "Bright flat shapes with no outlines in a softly glowing world, where the camera zooms between the tiny and the enormous, from a single cell to a whole planet.",
  "Use for science, space, biology and big-picture ideas where scale is the story.",
