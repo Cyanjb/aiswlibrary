@@ -33,7 +33,11 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .cta b{color:var(--pink)}
 .crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
 footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;color:var(--soft);font-size:.9rem}
-.card{position:relative}.card .pick{position:absolute;top:14px;right:14px}.card h3{padding-right:74px}
+.card{position:relative}.card .pick{position:absolute;top:14px;right:14px;z-index:2}.card h3{padding-right:74px}
+.card .thumb{display:block;position:relative;margin:-18px -18px 14px;aspect-ratio:16/9;overflow:hidden;border-radius:14px 14px 0 0;background:#0d0b11;border-bottom:1px solid var(--line)}
+.card .thumb img,.card .thumb video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card .thumb+.pick+h3{padding-right:0}
+.card>small{display:block;padding-right:74px}.card .thumb~small{padding-right:0}
 .pick{font:inherit;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:3px 12px;background:#0d0b11;color:var(--soft);cursor:pointer;white-space:nowrap}
 .pick:hover{border-color:var(--teal);color:var(--teal)}
 .pick[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#121016}

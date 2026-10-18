@@ -19,3 +19,4 @@
 - Advanced Keywords
 - Sref Style Codes
 - Video and Cinematography
+- Design and Motion Styles

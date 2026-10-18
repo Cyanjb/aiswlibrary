@@ -15,6 +15,11 @@ The plain-language library of tested AI prompt keywords. Freemium: public pages 
 - **Copy link**: `index.html?pick=slug,slug` reopens the same picks for anyone.
 - Source: generator/picks.js (copied to the root on build).
 
+## Media and the gallery
+- `assets/clips/`: Shot Library stills and clips (from the Camera and Effects Library). `assets/style-samples/`: code-animated style references. `assets/styles/`: the Motion Style Catalog demos, one 10-second fake ad per style, with the "STYLE: name" label cropped off.
+- Every video has a same-named `.jpg` beside it. The generator uses it as the poster and as the card thumbnail; hovering a thumbnail plays the clip (`generator/gallery.js`). When you add a video, add its `.jpg` too (`ffmpeg -ss 1 -i clip.mp4 -frames:v 1 -vf scale=640:-2 clip.jpg`).
+- Rows with source `cyan-library-web-styles`, `cyan-library-motion-styles` or `cyan-library-camera` came from Cyan's own style library, motion-design skill and Camera and Effects Library (18 October 2026). Brand-derived styles were given generic names, and the Pac-Man style has no demo because the clip shows the real characters.
+
 ## AI feed
 - `/api/v1/keywords.json` (every published entry, full fields) and `/api/v1/categories.json`, rebuilt on every build
 - `/llms.txt` tells AI agents where the feed is
