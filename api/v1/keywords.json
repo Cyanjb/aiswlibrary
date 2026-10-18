@@ -1,7 +1,7 @@
 {
  "library": "AI and See Why Keyword Library",
  "updated": "July 2026",
- "count": 923,
+ "count": 971,
  "keywords": [
   {
    "slug": "16mm-film-look",
@@ -515,6 +515,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/academia-suffix.html"
+  },
+  {
+   "slug": "accordion",
+   "name": "Accordion",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A stack of rows where clicking one opens it to show more text below, while its little arrow flips. Click again and it folds shut.",
+   "when_to_use": "Use it for question and answer sections or long settings, so people only open what they need. Do not hide anything most visitors must read.",
+   "prompt_example": "\"Build an accordion for my questions section where each row opens smoothly to show its answer and the arrow rotates\"",
+   "pairs_well_with": [
+    "tabs",
+    "tooltip"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "calm",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/accordion.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/accordion.html"
   },
   {
    "slug": "acid-art",
@@ -1081,6 +1111,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/angura-kei.html"
+  },
+  {
+   "slug": "animated-gradient-background",
+   "name": "Animated Gradient Background",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A soft blend of colours slowly drifts and swirls behind a headline, like coloured light moving under frosted glass.",
+   "when_to_use": "Use it for a hero section, the big welcome area at the top of a page, when you want calm movement without photos. Keep the text on top strong and readable.",
+   "prompt_example": "\"Give my hero section an animated gradient background: soft pink, violet and teal blobs slowly flowing behind a white headline and button.\"",
+   "pairs_well_with": [
+    "gradient web design",
+    "glassmorphism ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "calm",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/animated-gradient-background.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/animated-gradient-background.html"
   },
   {
    "slug": "anime-cel-animation",
@@ -2304,6 +2364,36 @@
    "url": "https://library.aiandseewhy.com/keyword/before-and-after.html"
   },
   {
+   "slug": "before-and-after-slider",
+   "name": "Before and After Slider",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Two versions of the same picture sit on top of each other, with a line and handle you drag sideways to uncover one or the other.",
+   "when_to_use": "Use it to show a change, like a photo edit, a makeover or a redesign. It needs two pictures lined up exactly, or the effect falls apart.",
+   "prompt_example": "\"Build a before and after image slider: a grey 'before' photo and a colourful 'after' photo with a draggable divider handle in the middle.\"",
+   "pairs_well_with": [
+    "clean web design",
+    "bold web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/before-and-after-slider.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/before-and-after-slider.html"
+  },
+  {
    "slug": "ben-day-dots",
    "name": "Ben-Day Dots",
    "category": "Comic Books",
@@ -2940,6 +3030,36 @@
    "url": "https://library.aiandseewhy.com/keyword/botanical-plate.html"
   },
   {
+   "slug": "bottom-sheet",
+   "name": "Bottom Sheet",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A panel that slides up from the bottom of a phone screen with a small grab handle on top. You can drag it down to close it.",
+   "when_to_use": "Use it on mobile for quick choices like sharing or sorting, right where a thumb can reach. It is made for phones and feels odd on a wide desktop screen.",
+   "prompt_example": "\"Add a bottom sheet to my mobile app that slides up when I tap Share, shows three options and closes when I drag its handle down\"",
+   "pairs_well_with": [
+    "side drawer",
+    "toast notification"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/bottom-sheet.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/bottom-sheet.html"
+  },
+  {
    "slug": "box-braids",
    "name": "Box Braids",
    "category": "People Descriptors",
@@ -2994,6 +3114,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/brass.html"
+  },
+  {
+   "slug": "breadcrumbs",
+   "name": "Breadcrumbs",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A trail of links at the top of a page, like Home > Library > Lighting, showing the path you took to get here. The last one is where you are, and clicking any earlier one takes you back there.",
+   "when_to_use": "Use it on sites with several levels, like libraries, shops or help centres. It adds little on a flat site with only a few pages.",
+   "prompt_example": "\"Add a breadcrumb trail above the page title that grows as I go deeper, highlights the current page and trims back when I click an earlier crumb.\"",
+   "pairs_well_with": [
+    "pagination",
+    "hamburger menu",
+    "editorial web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/breadcrumbs.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/breadcrumbs.html"
   },
   {
    "slug": "breakdancing-freeze",
@@ -3601,6 +3752,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/caravaggio.html"
+  },
+  {
+   "slug": "card-flip",
+   "name": "Card Flip",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A card that turns over like a playing card when you click or hover, showing more information on its back. It flips back to the front when you are done.",
+   "when_to_use": "Use it to tuck a short description or a button behind a picture, like on flashcards or product tiles. Keep the back short, since flipping hides the front.",
+   "prompt_example": "\"Make these keyword cards flip over in 3D when clicked to show a short description and a Use it button on the back, then flip back on a second click.\"",
+   "pairs_well_with": [
+    "floating action button",
+    "skeleton screen",
+    "bento grid layout"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "elegant"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/card-flip.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/card-flip.html"
   },
   {
    "slug": "caricature",
@@ -5022,6 +5204,36 @@
    "url": "https://library.aiandseewhy.com/keyword/condensation-droplets.html"
   },
   {
+   "slug": "confetti-burst",
+   "name": "Confetti Burst",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Clicking a button like Submit or Done sends a burst of colourful confetti flying out, spinning, falling and fading away.",
+   "when_to_use": "Use it to celebrate a real moment, like finishing sign up or completing a task. Save it for big wins; confetti on every click loses its joy.",
+   "prompt_example": "\"When I click the Submit button, burst colourful confetti out of it that spins, falls and fades, and turn the button into a green Done.\"",
+   "pairs_well_with": [
+    "ripple click",
+    "playful learning app ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/confetti-burst.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/confetti-burst.html"
+  },
+  {
    "slug": "contemporary-dance",
    "name": "Contemporary Dance",
    "category": "Dance",
@@ -5775,6 +5987,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/crystal-formations.html"
+  },
+  {
+   "slug": "cursor-follower",
+   "name": "Cursor Follower",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A soft coloured circle trails behind the mouse pointer with a little delay, like it is chasing it. It grows when the pointer reaches a button or link, then shrinks back.",
+   "when_to_use": "Use it on creative or portfolio sites to add a playful, custom feel. It does nothing on phones and can distract on busy pages, so keep it subtle.",
+   "prompt_example": "\"Add a soft pink circle that follows my cursor with a slight delay and grows when it is over a button or link\"",
+   "pairs_well_with": [
+    "magnetic button",
+    "image zoom on hover",
+    "creative web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "futuristic"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/cursor-follower.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/cursor-follower.html"
   },
   {
    "slug": "cutaway",
@@ -7054,6 +7297,36 @@
    "url": "https://library.aiandseewhy.com/keyword/dreamscape.html"
   },
   {
+   "slug": "dropdown-menu",
+   "name": "Dropdown Menu",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A box that opens a short list of choices when you click it. Moving over the list highlights each option, and the one you pick shows in the box.",
+   "when_to_use": "Use it when there are several choices but only room for one box. With just two or three options, plain buttons are quicker to use.",
+   "prompt_example": "\"Add a dropdown menu for picking a style that opens with a smooth drop, highlights the option under the mouse and shows my choice in the box\"",
+   "pairs_well_with": [
+    "segmented control",
+    "tooltip"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/dropdown-menu.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/dropdown-menu.html"
+  },
+  {
    "slug": "dry-brush",
    "name": "Dry Brush",
    "category": "Techniques",
@@ -7804,6 +8077,37 @@
    "url": "https://library.aiandseewhy.com/keyword/emo.html"
   },
   {
+   "slug": "empty-state",
+   "name": "Empty State",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "What a page shows when there is nothing in it yet: a friendly little drawing, a short message and a button to get started. It turns a blank space into a clear next step.",
+   "when_to_use": "Use it on any list, inbox or gallery that can be empty, especially for brand new users. Keep the words short and the button obvious.",
+   "prompt_example": "\"When the saved picks list is empty, show a simple line drawing of an open box with a heart, the words Nothing here yet and an Add first pick button.\"",
+   "pairs_well_with": [
+    "skeleton screen",
+    "notification badge",
+    "friendly pastel web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "cozy",
+    "playful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/empty-state.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/empty-state.html"
+  },
+  {
    "slug": "encaustic-art",
    "name": "Encaustic Art",
    "category": "Art Styles and Movements",
@@ -8229,6 +8533,37 @@
     "https://library.aiandseewhy.com/assets/clips/x-eyelevel.jpg"
    ],
    "url": "https://library.aiandseewhy.com/keyword/eye-level.html"
+  },
+  {
+   "slug": "fade-in-on-scroll",
+   "name": "Fade In on Scroll",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Cards and sections rise a little and fade into view one after another as they enter the screen. The page seems to reveal itself as you read down.",
+   "when_to_use": "Use it to make a long list of cards or features feel lively and easy to follow. Do not hide important content behind it, since slow devices may show it late.",
+   "prompt_example": "\"Make each card rise slightly and fade in, one after another, when it scrolls into view\"",
+   "pairs_well_with": [
+    "parallax scrolling",
+    "hover lift",
+    "bento grid layout"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "calm",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/fade-in-on-scroll.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/fade-in-on-scroll.html"
   },
   {
    "slug": "fade-to-black",
@@ -8770,6 +9105,36 @@
    "url": "https://library.aiandseewhy.com/keyword/film-photography.html"
   },
   {
+   "slug": "filter-chips",
+   "name": "Filter Chips",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A row of small rounded buttons, called chips, that you tap to narrow down what is shown. Picked chips fill with colour and the grid below rearranges to match.",
+   "when_to_use": "Use it to let people sort a gallery or shop by type in one tap. Too many chips in a row becomes hard to scan, so keep it to the main groups.",
+   "prompt_example": "\"Add filter chips above my gallery grid, where tapping a chip fills it pink and the cards smoothly shuffle to show only matching items\"",
+   "pairs_well_with": [
+    "tabs",
+    "image carousel"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/filter-chips.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/filter-chips.html"
+  },
+  {
    "slug": "fire",
    "name": "Fire",
    "category": "Science and Elements",
@@ -9030,6 +9395,37 @@
     "https://library.aiandseewhy.com/assets/styles/flat.mp4"
    ],
    "url": "https://library.aiandseewhy.com/keyword/flat-web-design.html"
+  },
+  {
+   "slug": "floating-action-button",
+   "name": "Floating Action Button",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A round button that floats in the bottom corner of a phone screen for the main thing you do in the app, usually with a plus sign. Tapping it can turn the plus into an X and fan out a few smaller choices.",
+   "when_to_use": "Use it in mobile apps where one action matters most, like writing a new note. One per screen is plenty, and make sure it never covers important content.",
+   "prompt_example": "\"Add a round pink plus button in the bottom right corner of the mobile app that rotates into an X when tapped and fans out three small buttons for note, photo and voice.\"",
+   "pairs_well_with": [
+    "hamburger menu",
+    "card flip",
+    "playful learning app ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/floating-action-button.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/floating-action-button.html"
   },
   {
    "slug": "floating-embers",
@@ -10916,6 +11312,37 @@
    "url": "https://library.aiandseewhy.com/keyword/halston.html"
   },
   {
+   "slug": "hamburger-menu",
+   "name": "Hamburger Menu",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "An icon of three stacked lines that opens a hidden menu when tapped. Here the lines morph into an X while the menu slides down, so you know how to close it.",
+   "when_to_use": "Use it on small screens to tuck navigation away and keep the page clean. Hidden menus get used less, so keep your most important link visible too.",
+   "prompt_example": "\"Add a three-line menu icon to the header that morphs into an X when clicked and slides a full-width menu with Home, Library, Lessons and Contact down from the top.\"",
+   "pairs_well_with": [
+    "breadcrumbs",
+    "floating action button",
+    "clean web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "elegant"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/hamburger-menu.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/hamburger-menu.html"
+  },
+  {
    "slug": "hammered-gold",
    "name": "Hammered Gold",
    "category": "Metals",
@@ -11704,6 +12131,37 @@
    "url": "https://library.aiandseewhy.com/keyword/hopi-art.html"
   },
   {
+   "slug": "horizontal-scroll",
+   "name": "Horizontal Scroll",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Scrolling down the page moves a row of big cards sideways across the screen instead. It turns a normal scroll into a sideways gallery or timeline.",
+   "when_to_use": "Use it for a timeline, a set of chapters or a portfolio row that deserves a moment of attention. It can confuse people on phones, so test it there and keep a simple fallback.",
+   "prompt_example": "\"When I scroll down, move this row of large cards sideways across the screen like a timeline\"",
+   "pairs_well_with": [
+    "scroll pinning",
+    "scroll snap",
+    "immersive exhibit web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/horizontal-scroll.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/horizontal-scroll.html"
+  },
+  {
    "slug": "houndstooth",
    "name": "Houndstooth",
    "category": "Patterns",
@@ -11731,6 +12189,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/houndstooth.html"
+  },
+  {
+   "slug": "hover-lift",
+   "name": "Hover Lift",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "When the mouse passes over a card, it rises a little and casts a deeper shadow, then settles back down when the mouse leaves. It tells you the card can be clicked.",
+   "when_to_use": "Use it on grids of clickable cards, like products, trips or articles. Phones have no hover, so make sure the cards still look tappable without it.",
+   "prompt_example": "\"Make each card lift up with a deeper shadow when I hover over it, and settle back when I move away\"",
+   "pairs_well_with": [
+    "image zoom on hover",
+    "fade in on scroll",
+    "bento grid layout"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/hover-lift.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/hover-lift.html"
   },
   {
    "slug": "huipil",
@@ -11935,6 +12424,67 @@
    "url": "https://library.aiandseewhy.com/keyword/illustration.html"
   },
   {
+   "slug": "image-carousel",
+   "name": "Image Carousel",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A row of big pictures that slides along one at a time, with dots underneath showing which one you are on. Arrows on the sides move it forward or back.",
+   "when_to_use": "Use it to show a few featured pictures in the space of one. Many people never look past the first slide, so put the best one first.",
+   "prompt_example": "\"Build an image carousel with four large slides that glide one step at a time, arrow buttons on each side and dots below that show the current slide\"",
+   "pairs_well_with": [
+    "filter chips",
+    "tabs"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/image-carousel.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/image-carousel.html"
+  },
+  {
+   "slug": "image-zoom-on-hover",
+   "name": "Image Zoom on Hover",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "When the mouse rests on a picture, the image slowly zooms in inside its frame while a caption slides up from the bottom. The frame stays the same size; only the picture grows.",
+   "when_to_use": "Use it on galleries, portfolios and shop items to invite a closer look. Keep the zoom slow and small, or it feels jumpy.",
+   "prompt_example": "\"When I hover a photo card, slowly zoom the image inside its frame and slide a caption up from the bottom\"",
+   "pairs_well_with": [
+    "hover lift",
+    "cursor follower",
+    "premium product web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/image-zoom-on-hover.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/image-zoom-on-hover.html"
+  },
+  {
    "slug": "immersive-exhibit-web-design",
    "name": "Immersive Exhibit Web Design",
    "category": "Web and App Design Styles",
@@ -12108,6 +12658,66 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/industrial-loft.html"
+  },
+  {
+   "slug": "infinite-marquee",
+   "name": "Infinite Marquee",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Rows of big words or little labels glide sideways forever in a smooth endless loop, often with rows moving in opposite directions.",
+   "when_to_use": "Use it for a band of keywords, partner badges or short claims that adds energy to a page. Do not put important information in it, since moving text is hard to read.",
+   "prompt_example": "\"Add an infinite marquee section: two rows of big words sliding sideways in opposite directions, looping seamlessly with faded edges.\"",
+   "pairs_well_with": [
+    "bold web design",
+    "animated gradient background"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "vibrant colors",
+    "edgy"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/infinite-marquee.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/infinite-marquee.html"
+  },
+  {
+   "slug": "infinite-scroll",
+   "name": "Infinite Scroll",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "As you scroll to the bottom of a feed, a small loading sign appears and more items arrive below, so the list never seems to end.",
+   "when_to_use": "Use it for photo feeds, galleries and social style lists that people browse casually. Avoid it when people need to reach a footer or find their place again.",
+   "prompt_example": "\"Make my gallery load more cards when I scroll to the bottom, with a small spinner while the new ones arrive.\"",
+   "pairs_well_with": [
+    "bento grid layout",
+    "clean web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/infinite-scroll.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/infinite-scroll.html"
   },
   {
    "slug": "infinity-mirror",
@@ -13994,6 +14604,37 @@
    "url": "https://library.aiandseewhy.com/keyword/line-drawing.html"
   },
   {
+   "slug": "link-underline-animation",
+   "name": "Link Underline Animation",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "When you point at a link, a line draws itself underneath from left to right, then slides away when you move off.",
+   "when_to_use": "Use it for menus and text links so people can see what they are about to click. Works best with a few clear links, not long paragraphs full of them.",
+   "prompt_example": "\"Make my nav links show a pink underline that grows from left to right on hover and slides away when the mouse leaves.\"",
+   "pairs_well_with": [
+    "staggered reveal",
+    "minimal web design",
+    "editorial web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/link-underline-animation.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/link-underline-animation.html"
+  },
+  {
    "slug": "linocut",
    "name": "Linocut",
    "category": "Printing and Transfer Techniques",
@@ -14199,6 +14840,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/lo-fi-bedroom-studio.html"
+  },
+  {
+   "slug": "loading-spinner",
+   "name": "Loading Spinner",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A spinning ring that tells you something is working in the background. Here it finishes by turning into a tick so you know the job is done.",
+   "when_to_use": "Use it for short waits of a few seconds, like saving or sending. For longer waits a progress bar or a skeleton screen tells people more.",
+   "prompt_example": "\"Show a clean spinning pink arc with the word Loading while the form sends, then turn it into a teal circle with a check mark and the words All done.\"",
+   "pairs_well_with": [
+    "skeleton screen",
+    "step indicator",
+    "minimal web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/loading-spinner.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/loading-spinner.html"
   },
   {
    "slug": "lomography",
@@ -15032,6 +15704,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/magnetic-art.html"
+  },
+  {
+   "slug": "magnetic-button",
+   "name": "Magnetic Button",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A button that leans toward the mouse as it gets close, as if pulled by a magnet, then springs back when the mouse moves away. It squashes a little when clicked.",
+   "when_to_use": "Use it on one main call to action, the button you most want people to press, to make it feel alive. Keep it to one or two buttons per page.",
+   "prompt_example": "\"Make my main button lean toward the cursor when it gets close, spring back when it leaves, and squash slightly on click\"",
+   "pairs_well_with": [
+    "cursor follower",
+    "hover lift",
+    "bold web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/magnetic-button.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/magnetic-button.html"
   },
   {
    "slug": "majolica",
@@ -15871,6 +16574,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/mixed-media.html"
+  },
+  {
+   "slug": "modal-dialog",
+   "name": "Modal Dialog",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A box that pops up in the middle of the screen while the page behind it goes dark. It asks one question and waits for an answer, usually with two buttons.",
+   "when_to_use": "Use it to confirm something important, like deleting a list. Keep it rare, because a box that blocks the whole page gets annoying fast.",
+   "prompt_example": "\"Add a modal dialog that asks Delete this list? with Cancel and Delete buttons, dims the page behind it and pops in with a small bounce\"",
+   "pairs_well_with": [
+    "toast notification",
+    "toggle switch"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/modal-dialog.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/modal-dialog.html"
   },
   {
    "slug": "model-train-layout",
@@ -16983,6 +17716,67 @@
    "url": "https://library.aiandseewhy.com/keyword/nostalgia.html"
   },
   {
+   "slug": "notification-badge",
+   "name": "Notification Badge",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A small bright circle with a number that sits on the corner of an icon, like a bell, to show how many new things are waiting. It pops in, counts up and clears once you look.",
+   "when_to_use": "Use it to point gently at new messages or updates. Too many badges at once start to feel like nagging, so save it for things that matter.",
+   "prompt_example": "\"Put a pink count badge on the bell icon in the header that pops in with a little bounce, makes the bell wiggle as the number goes up, and clears when I click the bell.\"",
+   "pairs_well_with": [
+    "stepper buttons",
+    "empty state",
+    "playful learning app ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/notification-badge.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/notification-badge.html"
+  },
+  {
+   "slug": "number-counter",
+   "name": "Number Counter",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Big numbers on stat cards count up quickly from zero to their real values and slow down as they land.",
+   "when_to_use": "Use it to make key numbers, like customers or ratings, catch the eye. Use real numbers only; a counting animation will not make a weak stat look stronger.",
+   "prompt_example": "\"Add three stat cards whose numbers count up from zero to 12,000+, 98% and 4.9 when they come into view, easing out at the end.\"",
+   "pairs_well_with": [
+    "bento grid layout",
+    "conversion landing page design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "tech",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/number-counter.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/number-counter.html"
+  },
+  {
    "slug": "object-oriented-ontology",
    "name": "Object-Oriented Ontology",
    "category": "Art Styles and Movements",
@@ -17575,6 +18369,68 @@
    "url": "https://library.aiandseewhy.com/keyword/oxidized-iron.html"
   },
   {
+   "slug": "page-transition",
+   "name": "Page Transition",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "When you click a link, a coloured panel sweeps across the screen and the next page appears behind it, instead of a sudden jump.",
+   "when_to_use": "Use it to make a site feel smooth and connected, like one continuous space. Keep it quick, around half a second, so it never slows people down.",
+   "prompt_example": "\"Add a page transition: when I click a link, a pink panel wipes across the screen and reveals the new page, and it wipes back the other way when I go back.\"",
+   "pairs_well_with": [
+    "preloader",
+    "bold web design",
+    "creative web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/page-transition.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/page-transition.html"
+  },
+  {
+   "slug": "pagination",
+   "name": "Pagination",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A row of numbered page buttons with previous and next arrows under a list. The current page is highlighted, and clicking a number jumps to that page of results.",
+   "when_to_use": "Use it when a list is too long for one screen and people like to know where they are, like search results or a shop. For casual browsing, endless scrolling can feel smoother.",
+   "prompt_example": "\"Split this product grid into pages of 9 with numbered page buttons and next and previous arrows, and slide a pink highlight to the current page.\"",
+   "pairs_well_with": [
+    "breadcrumbs",
+    "skeleton screen",
+    "bento grid layout"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/pagination.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/pagination.html"
+  },
+  {
    "slug": "paisley",
    "name": "Paisley",
    "category": "Patterns",
@@ -18013,6 +18869,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/papercraft.html"
+  },
+  {
+   "slug": "parallax-scrolling",
+   "name": "Parallax Scrolling",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "Layers of a page move at different speeds as you scroll, so the background drifts slowly while the front races past. It makes a flat page feel deep, like looking out of a train window.",
+   "when_to_use": "Use it on a hero, the big opening area of a page, to give a landing page a sense of depth. Keep it gentle: strong movement can make some people feel queasy.",
+   "prompt_example": "\"Add a parallax hero with a sky, far hills and near hills that each move at a different speed as I scroll\"",
+   "pairs_well_with": [
+    "fade in on scroll",
+    "sticky header",
+    "storytelling web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/parallax-scrolling.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/parallax-scrolling.html"
   },
   {
    "slug": "parchment-editorial-ui",
@@ -19216,6 +20103,37 @@
    "url": "https://library.aiandseewhy.com/keyword/practical-lighting.html"
   },
   {
+   "slug": "preloader",
+   "name": "Preloader",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A full screen loading page that counts up to 100 percent, then slides away to reveal the website underneath.",
+   "when_to_use": "Use it on portfolio or launch sites where a short, stylish entrance fits the mood. Keep it brief; making people wait for a pretty counter on every visit can annoy them.",
+   "prompt_example": "\"Add a preloader to my site: a dark screen with a big percentage counting to 100 and a progress bar, then it slides up to show the page.\"",
+   "pairs_well_with": [
+    "staggered reveal",
+    "page transition",
+    "bold web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "tech",
+    "edgy"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/preloader.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/preloader.html"
+  },
+  {
    "slug": "premium-product-web-design",
    "name": "Premium Product Web Design",
    "category": "Web and App Design Styles",
@@ -19887,6 +20805,37 @@
    "url": "https://library.aiandseewhy.com/keyword/ramen-bowl.html"
   },
   {
+   "slug": "range-slider",
+   "name": "Range Slider",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A bar with a round knob you drag left or right to pick a number. The bar fills in colour as you go and a little bubble shows the value.",
+   "when_to_use": "Use it for settings with lots of in-between values, like brightness, volume or price. For exact numbers people may still want a box they can type into.",
+   "prompt_example": "\"Add a range slider for brightness from 0 to 100, with a pink filled track and a value bubble that follows the knob while I drag.\"",
+   "pairs_well_with": [
+    "stepper buttons",
+    "minimal web design",
+    "neumorphism ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/range-slider.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/range-slider.html"
+  },
+  {
    "slug": "rattan-peacock-chair",
    "name": "Rattan Peacock Chair",
    "category": "Furniture",
@@ -20457,6 +21406,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/rinpa.html"
+  },
+  {
+   "slug": "ripple-click",
+   "name": "Ripple Click",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "When you click a button, a soft circle spreads out from the exact spot you touched and fades away inside the button.",
+   "when_to_use": "Use it to make buttons feel responsive and alive. Keep it subtle; a loud ripple on every small button gets tiring.",
+   "prompt_example": "\"Add a click ripple to my buttons: a soft white circle grows from where I click and fades out, staying inside the button.\"",
+   "pairs_well_with": [
+    "confetti burst",
+    "clean web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/ripple-click.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/ripple-click.html"
   },
   {
    "slug": "riso-web-design",
@@ -21229,6 +22208,99 @@
    "url": "https://library.aiandseewhy.com/keyword/screentone.html"
   },
   {
+   "slug": "scroll-pinning",
+   "name": "Scroll Pinning",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A section freezes in place while you keep scrolling, and its inside changes step by step, like a slideshow you drive with the scroll wheel. When the steps are done, the page moves on.",
+   "when_to_use": "Use it to walk people through a process or a product story in clear steps. It can feel like the page is stuck if the steps take too long, so keep it to three or four.",
+   "prompt_example": "\"Pin the How it works section while I scroll and swap through steps 01, 02 and 03, then let the page continue\"",
+   "pairs_well_with": [
+    "horizontal scroll",
+    "scroll progress bar",
+    "storytelling web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/scroll-pinning.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/scroll-pinning.html"
+  },
+  {
+   "slug": "scroll-progress-bar",
+   "name": "Scroll Progress Bar",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A thin coloured bar across the top of the page grows from empty to full as you read down. It shows at a glance how much of the article is left.",
+   "when_to_use": "Use it on blog posts, guides and long articles so readers know how far they have come. It adds little on short pages.",
+   "prompt_example": "\"Add a thin pink bar across the top of my article that fills up as the reader scrolls\"",
+   "pairs_well_with": [
+    "sticky header",
+    "text highlight sweep",
+    "editorial web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/scroll-progress-bar.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/scroll-progress-bar.html"
+  },
+  {
+   "slug": "scroll-snap",
+   "name": "Scroll Snap",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "The page is made of full-screen panels, and each scroll glides to the next one and settles exactly on it. You never stop halfway between two panels.",
+   "when_to_use": "Use it for story pages, product tours or galleries where each screen is one idea. It can feel bossy on pages with lots of reading, so save it for short, visual sections.",
+   "prompt_example": "\"Make my page a stack of full-height panels that snap into place one at a time as I scroll\"",
+   "pairs_well_with": [
+    "horizontal scroll",
+    "scroll pinning",
+    "immersive exhibit web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/scroll-snap.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/scroll-snap.html"
+  },
+  {
    "slug": "seascape",
    "name": "Seascape",
    "category": "Scapes",
@@ -21254,6 +22326,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/seascape.html"
+  },
+  {
+   "slug": "segmented-control",
+   "name": "Segmented Control",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A pill split into a few side by side choices, with a coloured highlight that slides to the one you pick. Only one choice is on at a time.",
+   "when_to_use": "Use it to switch between two to four views of the same thing, like Day, Week and Month. With more options, use a dropdown menu instead.",
+   "prompt_example": "\"Add a segmented control with Day, Week and Month where a pink highlight slides between them and the chart below updates\"",
+   "pairs_well_with": [
+    "tabs",
+    "toggle switch"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/segmented-control.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/segmented-control.html"
   },
   {
    "slug": "seigaiha",
@@ -21601,6 +22703,36 @@
    "url": "https://library.aiandseewhy.com/keyword/shoujo-style.html"
   },
   {
+   "slug": "side-drawer",
+   "name": "Side Drawer",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A menu panel that slides in from the edge of the screen when you click the three line menu icon. The page behind it dims until you close it.",
+   "when_to_use": "Use it to tuck away navigation, the list of links to other pages, so the main screen stays clean. People may miss links hidden in it, so keep key actions visible.",
+   "prompt_example": "\"Make a side drawer menu that slides in from the left when I click the menu icon, dims the page and closes when I click outside it\"",
+   "pairs_well_with": [
+    "bottom sheet",
+    "accordion"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/side-drawer.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/side-drawer.html"
+  },
+  {
    "slug": "silent-film",
    "name": "Silent Film",
    "category": "TV and Movie Culture",
@@ -21833,6 +22965,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/sizzle.html"
+  },
+  {
+   "slug": "skeleton-screen",
+   "name": "Skeleton Screen",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "Soft grey blocks shaped like the page that show while content is still loading, with a gentle shine sweeping across. They then fade into the real pictures and text.",
+   "when_to_use": "Use it so a page feels fast and steady while it waits for data, instead of showing a blank screen. It only helps if the grey shapes match the real layout.",
+   "prompt_example": "\"While these cards load, show grey placeholder blocks in the same shapes with a soft shimmer sweeping across, then cross-fade into the real cards.\"",
+   "pairs_well_with": [
+    "loading spinner",
+    "empty state",
+    "layered surfaces ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "calm",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/skeleton-screen.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/skeleton-screen.html"
   },
   {
    "slug": "sketchbook-redraw",
@@ -22733,6 +23896,37 @@
    "url": "https://library.aiandseewhy.com/keyword/splash-shot.html"
   },
   {
+   "slug": "staggered-reveal",
+   "name": "Staggered Reveal",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "The words of a headline rise into place one after another, followed by the buttons, so the page seems to arrive in a gentle wave.",
+   "when_to_use": "Use it for a page opening or a new section coming into view. Keep the delays short so the whole reveal finishes in about a second.",
+   "prompt_example": "\"Animate my hero so each word of the headline slides up into place one after another, then the buttons fade in after them.\"",
+   "pairs_well_with": [
+    "text scramble",
+    "editorial web design",
+    "preloader"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "elegant",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/staggered-reveal.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/staggered-reveal.html"
+  },
+  {
    "slug": "stained-glass",
    "name": "Stained Glass",
    "category": "Medium",
@@ -22938,6 +24132,68 @@
    "url": "https://library.aiandseewhy.com/keyword/steampunk.html"
   },
   {
+   "slug": "step-indicator",
+   "name": "Step Indicator",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A row of numbered circles joined by a line that shows where you are in a process with several steps. Finished steps turn into ticks and the line fills up as you move along.",
+   "when_to_use": "Use it for sign-up flows, checkouts or set-up wizards so people know how much is left. With more than about five steps it starts to feel long, so group steps where you can.",
+   "prompt_example": "\"Add a 4 step progress bar for sign up, Account, Profile, Plan and Done, with circles joined by a line that fills and ticks each step as I press Next.\"",
+   "pairs_well_with": [
+    "loading spinner",
+    "breadcrumbs",
+    "conversion landing page design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/step-indicator.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/step-indicator.html"
+  },
+  {
+   "slug": "stepper-buttons",
+   "name": "Stepper Buttons",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A small minus and plus pair with a number in the middle. Each tap nudges the number down or up by one.",
+   "when_to_use": "Use it for small counts like tickets, guests or items in a cart. It gets slow for big numbers, so switch to a slider or a typed box there.",
+   "prompt_example": "\"Make a ticket counter with round minus and plus buttons around a big number that pops a little each time it changes, from 1 to 10.\"",
+   "pairs_well_with": [
+    "range slider",
+    "notification badge",
+    "playful learning app ui"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "minimal"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/stepper-buttons.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/stepper-buttons.html"
+  },
+  {
    "slug": "sticker-sheet",
    "name": "Sticker Sheet",
    "category": "Other",
@@ -22964,6 +24220,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/sticker-sheet.html"
+  },
+  {
+   "slug": "sticky-header",
+   "name": "Sticky Header",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "The top bar of a page with the logo and menu stays pinned in place while everything else scrolls underneath. Once you start scrolling it shrinks a little and gains a soft shadow.",
+   "when_to_use": "Use it on long pages so the menu and main button are always one click away. On small phone screens keep it slim so it does not eat the view.",
+   "prompt_example": "\"Keep my header pinned to the top, and make it shrink slightly with a soft shadow once the page scrolls\"",
+   "pairs_well_with": [
+    "scroll progress bar",
+    "fade in on scroll",
+    "clean web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "tech"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/sticky-header.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/sticky-header.html"
   },
   {
    "slug": "stippling",
@@ -23668,6 +24955,36 @@
    "url": "https://library.aiandseewhy.com/keyword/tabletop-product-shot.html"
   },
   {
+   "slug": "tabs",
+   "name": "Tabs",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A row of labels across the top of a section, like folder tabs. Clicking one slides a coloured underline over to it and swaps the content below.",
+   "when_to_use": "Use it to split related content into a few groups on one page, such as photos, videos and saved items. More than five or six tabs gets crowded.",
+   "prompt_example": "\"Add tabs for Photos, Videos and Saved with a pink underline that slides between them and a short fade when the content changes\"",
+   "pairs_well_with": [
+    "segmented control",
+    "filter chips"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "elegant"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/tabs.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/tabs.html"
+  },
+  {
    "slug": "tactile-art",
    "name": "Tactile Art",
    "category": "Art Styles and Movements",
@@ -24101,6 +25418,68 @@
    "url": "https://library.aiandseewhy.com/keyword/terrarium.html"
   },
   {
+   "slug": "text-highlight-sweep",
+   "name": "Text Highlight Sweep",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "A marker-pen colour sweeps across behind the words of a sentence, one line after another, as if someone is highlighting it while you watch. It pulls the eye to the key message.",
+   "when_to_use": "Use it on one important line, such as a promise or a headline, to make it stand out. Used on too much text it stops meaning anything.",
+   "prompt_example": "\"Animate a pink marker highlight that sweeps behind this paragraph line by line when it appears\"",
+   "pairs_well_with": [
+    "fade in on scroll",
+    "scroll progress bar",
+    "editorial web design"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "playful",
+    "vibrant colors"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/text-highlight-sweep.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/text-highlight-sweep.html"
+  },
+  {
+   "slug": "text-scramble",
+   "name": "Text Scramble",
+   "category": "Web Motion and Effects",
+   "category_id": "web-motion-effects",
+   "section": "Design and Motion Styles",
+   "definition": "The letters of a headline flicker through random characters, like a code being cracked, before settling into the real words from left to right.",
+   "when_to_use": "Use it for techy, mysterious or playful headlines. Use it on one short line only; on long text it becomes hard to read.",
+   "prompt_example": "\"Make my headline do a text scramble: each letter flickers through random characters and settles into the real word, left to right.\"",
+   "pairs_well_with": [
+    "monospace hacker web design",
+    "futuristic web design",
+    "staggered reveal"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "tech",
+    "futuristic"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/text-scramble.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/text-scramble.html"
+  },
+  {
    "slug": "textbook-illustration",
    "name": "Textbook Illustration",
    "category": "Academic",
@@ -24391,6 +25770,66 @@
    "url": "https://library.aiandseewhy.com/keyword/tiptoeing.html"
   },
   {
+   "slug": "toast-notification",
+   "name": "Toast Notification",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A small message card that slides in near the corner of the screen to say something happened, then slides away by itself. It pops up like toast from a toaster.",
+   "when_to_use": "Use it to confirm quick actions like Saved or Copied without stopping the person. Do not use it for errors people must fix, because it disappears.",
+   "prompt_example": "\"Show a toast notification in the bottom corner that slides up saying Picks saved, with a tick and a shrinking timer bar, then slides away\"",
+   "pairs_well_with": [
+    "modal dialog",
+    "bottom sheet"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "playful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/toast-notification.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/toast-notification.html"
+  },
+  {
+   "slug": "toggle-switch",
+   "name": "Toggle Switch",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "An on and off switch shaped like a small pill. Clicking it slides the round knob across and the track changes colour to show it is on.",
+   "when_to_use": "Use it for settings that take effect straight away, like dark mode. For choices that only apply after pressing Save, a tick box is clearer.",
+   "prompt_example": "\"Make a settings list with toggle switches where the knob slides across and the track turns pink when a setting is on\"",
+   "pairs_well_with": [
+    "segmented control",
+    "tooltip"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "playful"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/toggle-switch.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/toggle-switch.html"
+  },
+  {
    "slug": "toile",
    "name": "Toile",
    "category": "Art Styles and Movements",
@@ -24450,6 +25889,36 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/tonalist.html"
+  },
+  {
+   "slug": "tooltip",
+   "name": "Tooltip",
+   "category": "UI Components",
+   "category_id": "ui-components",
+   "section": "Design and Motion Styles",
+   "definition": "A small label with a pointer arrow that fades in above something when you hover the mouse over it. It fades away when the mouse leaves.",
+   "when_to_use": "Use it to explain a small icon or setting in a few words. Phones have no hover, so never put must know information only in a tooltip.",
+   "prompt_example": "\"Add a tooltip to the info icon that fades in above it with a little pointer arrow and says Saves every 30 seconds\"",
+   "pairs_well_with": [
+    "toggle switch",
+    "dropdown menu"
+   ],
+   "works_in": [
+    "claude-code",
+    "lovable",
+    "v0",
+    "bolt"
+   ],
+   "tags": [
+    "web design",
+    "ui motion",
+    "minimal",
+    "calm"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/ui-motion/tooltip.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/tooltip.html"
   },
   {
    "slug": "toyism",

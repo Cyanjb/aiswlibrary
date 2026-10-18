@@ -20,6 +20,10 @@ The plain-language library of tested AI prompt keywords. Freemium: public pages 
 - Every video has a same-named `.jpg` beside it. The generator uses it as the poster and as the card thumbnail; hovering a thumbnail plays the clip (`generator/gallery.js`). When you add a video, add its `.jpg` too (`ffmpeg -ss 1 -i clip.mp4 -frames:v 1 -vf scale=640:-2 clip.jpg`).
 - Rows with source `cyan-library-web-styles`, `cyan-library-motion-styles` or `cyan-library-camera` came from Cyan's own style library, motion-design skill and Camera and Effects Library (18 October 2026). Brand-derived styles were given generic names, and the Pac-Man style has no demo because the clip shows the real characters.
 
+## UI and Web Motion demos
+- `generator/ui-demos/`: the 48 UI Components and Web Motion and Effects demos, drawn in code (`kit.js` plus one file per group in `demos/`). Every demo is a pure function of time, so it loops seamlessly and renders the same every time.
+- Check by eye: `node generator/ui-demos/preview.mjs <group>.js out.png`. Render to `assets/ui-motion/`: `node generator/ui-demos/render.mjs [slug ...]`. `BRIEF.md` there holds the rules for adding a demo.
+
 ## AI feed
 - `/api/v1/keywords.json` (every published entry, full fields) and `/api/v1/categories.json`, rebuilt on every build
 - `/llms.txt` tells AI agents where the feed is

@@ -466,5 +466,17 @@
   "name": "Motion Graphics Styles",
   "section": "Design and Motion Styles",
   "count": 59
+ },
+ {
+  "category_id": "ui-components",
+  "name": "UI Components",
+  "section": "Design and Motion Styles",
+  "count": 24
+ },
+ {
+  "category_id": "web-motion-effects",
+  "name": "Web Motion and Effects",
+  "section": "Design and Motion Styles",
+  "count": 24
  }
 ]
