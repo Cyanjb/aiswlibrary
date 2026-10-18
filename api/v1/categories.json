@@ -1,0 +1,446 @@
+[
+ {
+  "category_id": "art-styles-movements",
+  "name": "Art Styles and Movements",
+  "section": "Styles and Keywords",
+  "count": 148
+ },
+ {
+  "category_id": "illustration-and-animation",
+  "name": "Illustration and Animation",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "techniques",
+  "name": "Techniques",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "scapes",
+  "name": "Scapes",
+  "section": "Styles and Keywords",
+  "count": 5
+ },
+ {
+  "category_id": "world-culture-styles",
+  "name": "World Culture Styles",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "time-periods-and-eras",
+  "name": "Time Periods and Eras",
+  "section": "Styles and Keywords",
+  "count": 4
+ },
+ {
+  "category_id": "lighting",
+  "name": "Lighting",
+  "section": "Styles and Keywords",
+  "count": 8
+ },
+ {
+  "category_id": "colors-palettes",
+  "name": "Colors and Palettes",
+  "section": "Styles and Keywords",
+  "count": 4
+ },
+ {
+  "category_id": "anime-and-manga",
+  "name": "Anime and Manga",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "style-suffixes",
+  "name": "Style Suffixes",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "special-effects",
+  "name": "Special Effects",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "power-words",
+  "name": "Power Words",
+  "section": "Styles and Keywords",
+  "count": 4
+ },
+ {
+  "category_id": "people-descriptors",
+  "name": "People Descriptors",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "cliche-roles",
+  "name": "Cliche Roles",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "weather",
+  "name": "Weather",
+  "section": "Styles and Keywords",
+  "count": 5
+ },
+ {
+  "category_id": "medium",
+  "name": "Medium",
+  "section": "Styles and Keywords",
+  "count": 6
+ },
+ {
+  "category_id": "renders",
+  "name": "Renders",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "textures",
+  "name": "Textures",
+  "section": "Styles and Keywords",
+  "count": 6
+ },
+ {
+  "category_id": "patterns",
+  "name": "Patterns",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "other",
+  "name": "Other",
+  "section": "Styles and Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "basic-color-spectrum",
+  "name": "Basic Color Spectrum",
+  "section": "Color Library",
+  "count": 0
+ },
+ {
+  "category_id": "advanced-color-spectrum",
+  "name": "Advanced Color Spectrum",
+  "section": "Color Library",
+  "count": 0
+ },
+ {
+  "category_id": "art-literature-and-diagrams",
+  "name": "Art, Literature and Diagrams",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "tv-and-movie-culture",
+  "name": "TV and Movie Culture",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "literature-and-fiction",
+  "name": "Literature and Fiction",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "storytelling-core",
+  "name": "Storytelling",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "emotions-and-moods",
+  "name": "Emotions and Moods",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "fashion-timeline-history",
+  "name": "Fashion Timeline and History",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "worldwide-fashion",
+  "name": "Worldwide Fashion",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "comic-books",
+  "name": "Comic Books",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "characters-public-domain",
+  "name": "Public Domain Characters",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "actions",
+  "name": "Actions",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "body-types",
+  "name": "Body Types",
+  "section": "Storytelling",
+  "count": 0
+ },
+ {
+  "category_id": "business",
+  "name": "Business",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "architects",
+  "name": "Architects",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "architectural-styles",
+  "name": "Architectural Styles",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "fashion-designers",
+  "name": "Fashion Designers",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "fashion-patterns-style",
+  "name": "Fashion Patterns and Style",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "pottery-and-ceramics",
+  "name": "Pottery and Ceramics",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "jewelry-and-gemstones",
+  "name": "Jewelry and Gemstones",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "interior-decor",
+  "name": "Interior Decor",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "furniture",
+  "name": "Furniture",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "food-and-cooking-effects",
+  "name": "Food and Cooking Effects",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "printing-and-transfer-techniques",
+  "name": "Printing and Transfer Techniques",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "music",
+  "name": "Music",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "dance",
+  "name": "Dance",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "food",
+  "name": "Food",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "art-handicrafts",
+  "name": "Art Handicrafts",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "craft-hobbies",
+  "name": "Craft Hobbies",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "academic",
+  "name": "Academic",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "science-and-elements",
+  "name": "Science and Elements",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "plants-and-herbs",
+  "name": "Plants and Herbs",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "metals",
+  "name": "Metals",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "animals",
+  "name": "Animals",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "interior-designers",
+  "name": "Interior Designers",
+  "section": "Design and Industry",
+  "count": 0
+ },
+ {
+  "category_id": "photographers",
+  "name": "Photographers",
+  "section": "Photography",
+  "count": 0
+ },
+ {
+  "category_id": "photography-styles",
+  "name": "Photography Styles",
+  "section": "Photography",
+  "count": 5
+ },
+ {
+  "category_id": "photo-types-and-films",
+  "name": "Photo Types and Films",
+  "section": "Photography",
+  "count": 0
+ },
+ {
+  "category_id": "photography-special-effects",
+  "name": "Photography Special Effects",
+  "section": "Photography",
+  "count": 0
+ },
+ {
+  "category_id": "photo-angles",
+  "name": "Photo Angles",
+  "section": "Photography",
+  "count": 0
+ },
+ {
+  "category_id": "pd-classics",
+  "name": "Classics",
+  "section": "Public Domain Artists",
+  "count": 0
+ },
+ {
+  "category_id": "pd-painters",
+  "name": "Painters",
+  "section": "Public Domain Artists",
+  "count": 0
+ },
+ {
+  "category_id": "pd-illustrators",
+  "name": "Illustrators",
+  "section": "Public Domain Artists",
+  "count": 0
+ },
+ {
+  "category_id": "style-hybrids",
+  "name": "Style Hybrids",
+  "section": "Advanced Keywords",
+  "count": 4
+ },
+ {
+  "category_id": "hybrid-mediums",
+  "name": "Hybrid Mediums",
+  "section": "Advanced Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "exotic-themes",
+  "name": "Exotic Themes",
+  "section": "Advanced Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "illusions",
+  "name": "Illusions",
+  "section": "Advanced Keywords",
+  "count": 0
+ },
+ {
+  "category_id": "version-61-srefs",
+  "name": "Version 6.1 Srefs",
+  "section": "Sref Style Codes",
+  "count": 0
+ },
+ {
+  "category_id": "camera-movements",
+  "name": "Camera Movements",
+  "section": "Video and Cinematography",
+  "count": 25
+ },
+ {
+  "category_id": "shot-sizes-angles",
+  "name": "Shot Sizes and Angles",
+  "section": "Video and Cinematography",
+  "count": 18
+ },
+ {
+  "category_id": "lenses-optics",
+  "name": "Lenses and Optics",
+  "section": "Video and Cinematography",
+  "count": 9
+ },
+ {
+  "category_id": "cinematic-lighting",
+  "name": "Cinematic Lighting",
+  "section": "Video and Cinematography",
+  "count": 9
+ },
+ {
+  "category_id": "transitions-editing",
+  "name": "Transitions and Editing",
+  "section": "Video and Cinematography",
+  "count": 23
+ },
+ {
+  "category_id": "film-looks-grades",
+  "name": "Film Looks and Grades",
+  "section": "Video and Cinematography",
+  "count": 7
+ }
+]
