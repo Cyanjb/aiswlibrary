@@ -151,6 +151,11 @@ NEW = [
  "Use for personal stories, funny mishaps and talking-to-camera content where the voice is the star.",
  "\"cartoon girl with big glasses shrugs at a computer full of code, storytime animation, thick outlines\"",
  "cartoon;flat vector illustration", VIDEO_TOOLS, "storytime-animation.mp4", "video;drawing;playful"),
+("presenter-explainer", "Presenter Explainer", "explainer-animation",
+ "A cartoon host walks the viewer through the story on a paper-and-sticker page: she points at cards, stands inside the chart, and cuts to a big reaction close-up when the number lands.",
+ "Use for business, money and history explainers where a friendly guide keeps a voiceover personal and easy to follow.",
+ "\"cartoon host in a yellow hoodie points at a bar chart on a cream dotted page, presenter explainer animation\"",
+ "storytime animation;data chart animation;kinetic typography", VIDEO_TOOLS, "presenter-explainer.mp4", "video;drawing;playful;words and letters"),
 ]
 
 def load(name):
