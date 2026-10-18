@@ -1,7 +1,7 @@
 {
  "library": "AI and See Why Keyword Library",
  "updated": "July 2026",
- "count": 923,
+ "count": 924,
  "keywords": [
   {
    "slug": "16mm-film-look",
@@ -19273,6 +19273,37 @@
    ],
    "media": [],
    "url": "https://library.aiandseewhy.com/keyword/preppy.html"
+  },
+  {
+   "slug": "presenter-explainer",
+   "name": "Presenter Explainer",
+   "category": "Explainer Animation Styles",
+   "category_id": "explainer-animation",
+   "section": "Video and Cinematography",
+   "definition": "A cartoon host walks the viewer through the story on a paper-and-sticker page: she points at cards, stands inside the chart, and cuts to a big reaction close-up when the number lands.",
+   "when_to_use": "Use for business, money and history explainers where a friendly guide keeps a voiceover personal and easy to follow.",
+   "prompt_example": "\"cartoon host in a yellow hoodie points at a bar chart on a cream dotted page, presenter explainer animation\"",
+   "pairs_well_with": [
+    "storytime animation",
+    "data chart animation",
+    "kinetic typography"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "video",
+    "drawing",
+    "playful",
+    "words and letters"
+   ],
+   "media": [
+    "https://library.aiandseewhy.com/assets/style-samples/presenter-explainer.mp4"
+   ],
+   "url": "https://library.aiandseewhy.com/keyword/presenter-explainer.html"
   },
   {
    "slug": "pressed-flowers-and-ink",
