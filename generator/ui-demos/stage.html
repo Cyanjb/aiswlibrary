@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>AISW UI demos</title>
+<style>html,body{margin:0;background:#121016}canvas{display:block}</style></head>
+<body><canvas id="c" width="960" height="540"></canvas>
+<script src="kit.js"></script>
+<script>
+// Load every demos/*.js named in ?files=a.js,b.js (render.mjs and preview.mjs pass the list)
+const files = (new URLSearchParams(location.search).get('files') || '').split(',').filter(Boolean);
+window.ready = Promise.all(files.map(f => new Promise((ok, bad) => {
+  const s = document.createElement('script'); s.src = 'demos/' + f; s.onload = ok; s.onerror = () => bad(new Error('load ' + f)); document.head.appendChild(s);
+})));
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+window.frame = (id, t, type = 'image/jpeg') => {
+  const d = DEMOS[id]; if (!d) throw new Error('no demo ' + id);
+  ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, 960, 540);
+  d.draw(ctx, 960, 540, ((t % d.cycle) + d.cycle) % d.cycle); ctx.restore();
+  return cv.toDataURL(type, 0.92);
+};
+window.list = () => Object.keys(DEMOS).map(id => ({ id, cycle: DEMOS[id].cycle }));
+</script></body></html>
