@@ -49,7 +49,8 @@ h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
 .imgs img,.imgs video{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
 .media-note{color:var(--soft);font-size:.8rem;font-style:italic;margin:8px 0 0}
 .imgs.media{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.imgs.media img,.imgs.media video{aspect-ratio:16/9}
+.imgs.media img,.imgs.media video{aspect-ratio:16/9;object-fit:contain;background:#0d0b11}
+.imgs.media .portrait{width:100%;max-width:420px;height:auto;justify-self:center}
 .cta{background:linear-gradient(120deg,#241a2e,#1a2430);border:1px solid var(--line);border-radius:16px;padding:22px;margin:34px 0}
 .cta b{color:var(--pink)}
 .crumb{color:var(--soft);font-size:.9rem;margin:20px 0 0}
@@ -57,6 +58,7 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 .card{position:relative}.card .pick{position:absolute;top:14px;right:14px;z-index:2}.card h3{padding-right:74px}
 .card .thumb{display:block;position:relative;margin:-18px -18px 14px;aspect-ratio:16/9;overflow:hidden;border-radius:14px 14px 0 0;background:#0d0b11;border-bottom:1px solid var(--line)}
 .card .thumb img,.card .thumb video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card .thumb.portrait img,.card .thumb.portrait video{object-fit:contain}
 .card .thumb+.pick+h3{padding-right:0}
 .card>small{display:block;padding-right:74px}.card .thumb~small{padding-right:0}
 .pick{font:inherit;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:3px 12px;background:#0d0b11;color:var(--soft);cursor:pointer;white-space:nowrap}
@@ -88,6 +90,37 @@ def poster_for(m):
     jpg = m.rsplit(".", 1)[0] + ".jpg"
     return jpg if os.path.exists(os.path.join(ASSETS, jpg)) else None
 
+import struct
+
+def image_size(path):
+    """(width, height) of a JPEG or PNG, read from its header; None if unknown."""
+    try:
+        with open(path, "rb") as f:
+            data = f.read(256 * 1024)
+    except OSError:
+        return None
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", data[16:24])
+    i = 2
+    while i + 9 < len(data) and data[:2] == b"\xff\xd8":
+        if data[i] != 0xFF:
+            return None
+        marker, seglen = data[i + 1], struct.unpack(">H", data[i + 2:i + 4])[0]
+        if marker in (0xC0, 0xC1, 0xC2):
+            h, w = struct.unpack(">HH", data[i + 5:i + 9])
+            return (w, h)
+        i += 2 + seglen
+    return None
+
+def shape_of(m):
+    """CSS aspect-ratio ('480 / 768') and 'portrait' or 'landscape' for a media path, from its still."""
+    p = poster_for(m)
+    size = image_size(os.path.join(ASSETS, p)) if p else None
+    if not size:
+        return ("16 / 9", "landscape")
+    w, h = size
+    return (f"{w} / {h}", "portrait" if h > w * 1.05 else "landscape")
+
 def thumb_of(k):
     """(still, video) for a card thumbnail, from the keyword's first media item."""
     media = [m.strip() for m in k.get("images", "").split(";") if m.strip()]
@@ -101,7 +134,8 @@ def thumb_html(k, pre):
     if not p:
         return ""
     dv = f' data-video="{html.escape(pre + "assets/" + v)}"' if v else ""
-    return (f'<a class="thumb" href="{pre}keyword/{html.escape(k["slug"])}.html"{dv}>'
+    ratio, shape = shape_of(p)
+    return (f'<a class="thumb {shape}" style="aspect-ratio:{ratio}" href="{pre}keyword/{html.escape(k["slug"])}.html"{dv}>'
             f'<img src="{html.escape(pre + "assets/" + p)}" alt="" loading="lazy"></a>')
 
 def pick_btn(k):
@@ -161,12 +195,14 @@ for k in kws:
             cells = []
             for m in media:
                 src = html.escape(f"../assets/{m}")
+                ratio, shape = shape_of(m)
+                fit = f' class="{shape}" style="aspect-ratio:{ratio}"'
                 if m.lower().endswith((".mp4", ".webm")):
                     p = poster_for(m)
                     pa = f' poster="{html.escape("../assets/" + p)}"' if p else ""
-                    cells.append(f'<video src="{src}"{pa} autoplay muted loop playsinline controls></video>')
+                    cells.append(f'<video src="{src}"{pa}{fit} autoplay muted loop playsinline controls></video>')
                 else:
-                    cells.append(f'<img src="{src}" alt="{html.escape(k["name"])} example" loading="lazy">')
+                    cells.append(f'<img src="{src}"{fit} alt="{html.escape(k["name"])} example" loading="lazy">')
             imgs = '<div class="imgs media">' + "".join(cells) + "</div>"
             if any(m.startswith("style-samples/") for m in media):
                 imgs += '<p class="media-note">Style sample: a code-animated reference for the look, not the output of this prompt. Your AI tool will give its own take.</p>'
@@ -242,7 +278,7 @@ for k in kws:
         "t": ktags,
         "d": k["definition"].split(".")[0] + ".",
         "D": k["definition"], "e": k["prompt_example"],
-        **({"i": thumb_of(k)[0], "v": thumb_of(k)[1]} if thumb_of(k)[0] else {}),
+        **({"i": thumb_of(k)[0], "v": thumb_of(k)[1], "r": shape_of(thumb_of(k)[0])[0], "o": shape_of(thumb_of(k)[0])[1]} if thumb_of(k)[0] else {}),
     })
 chips_html = ""
 for gname, gtags in FILTER_GROUPS:
@@ -276,7 +312,7 @@ function render(){
   });
   nores.style.display = hits.length ? 'none' : '';
   results.innerHTML = hits.map(k=>
-    `<div class="card">${k.i?`<a class="thumb" href="keyword/${k.s}.html"${k.v?` data-video="assets/${esc(k.v)}"`:''}><img src="assets/${esc(k.i)}" alt="" loading="lazy"></a>`:''}<button type="button" class="pick" aria-pressed="false" data-slug="${esc(k.s)}" data-name="${esc(k.n)}" data-cat="${esc(k.c)}" data-def="${esc(k.D)}" data-ex="${esc(k.e)}">+ Pick</button><small>${k.c}</small><h3><a href="keyword/${k.s}.html">${k.n}</a></h3><p>${k.d}</p></div>`
+    `<div class="card">${k.i?`<a class="thumb ${k.o}" style="aspect-ratio:${k.r}" href="keyword/${k.s}.html"${k.v?` data-video="assets/${esc(k.v)}"`:''}><img src="assets/${esc(k.i)}" alt="" loading="lazy"></a>`:''}<button type="button" class="pick" aria-pressed="false" data-slug="${esc(k.s)}" data-name="${esc(k.n)}" data-cat="${esc(k.c)}" data-def="${esc(k.D)}" data-ex="${esc(k.e)}">+ Pick</button><small>${k.c}</small><h3><a href="keyword/${k.s}.html">${k.n}</a></h3><p>${k.d}</p></div>`
   ).join('');
   if(window.AISWPicks) AISWPicks.sync();
 }
