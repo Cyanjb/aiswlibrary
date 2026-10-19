@@ -4,8 +4,10 @@ import csv, os, shutil, html
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA, DIST = os.path.join(os.path.dirname(ROOT), "data"), os.path.dirname(ROOT)
-DOMAIN = "https://library.aiandseewhy.com"
-UPDATED = "July 2026"
+# The address canonical tags, the sitemap and the AI feed point to. library.aiandseewhy.com has no DNS
+# record yet (checked 19 Oct 2026); switch back here once it points at Netlify.
+DOMAIN = "https://aiswlibrary.netlify.app"
+UPDATED = "October 2026"
 
 def rows(name):
     with open(os.path.join(DATA, name), newline="", encoding="utf-8") as f:
@@ -266,6 +268,7 @@ FILTER_GROUPS = [
  ("Feel", ["cute","dreamy","cozy","elegant","playful","romantic","moody","calm","spooky","edgy","magical","retro","vintage","futuristic"]),
  ("Type", ["painting","drawing","photography","fashion","pattern","craft","abstract","texture","nature","urban"]),
  ("Video", ["camera movement","framing","lens effect","lighting","editing","film look"]),
+ ("Design", ["web design","ui motion","motion graphics"]),
 ]
 all_tags = set()
 index = []

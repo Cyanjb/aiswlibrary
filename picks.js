@@ -1,7 +1,8 @@
 /* AI and See Why pick tray. Copied to the site root by build.py; edit this file, not /picks.js. */
 (function () {
   var KEY = 'aisw-picks-v1', NOTE = 'aisw-note-v1';
-  var SITE = 'https://library.aiandseewhy.com';
+  // Links use the address the visitor is on, so they work on any domain the site is served from.
+  var SITE = /^https?:$/.test(location.protocol) ? location.origin : 'https://aiswlibrary.netlify.app';
   var base = (document.currentScript && document.currentScript.src || '').replace(/picks\.js.*$/, '');
   var picks = load(KEY, []), note = load(NOTE, '');
 
