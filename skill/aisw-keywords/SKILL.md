@@ -1,6 +1,6 @@
 ---
 name: aisw-keywords
-description: 'Reads the AI and See Why Keyword Library (library.aiandseewhy.com): tested, plain-language prompt keywords for AI image and video models, covering styles, lighting, textures, palettes, camera movements, shot sizes, lenses, transitions and film looks. Use when the person pastes picks copied from the library ("I picked N keywords from the AI and See Why Keyword Library"), shares a picks link (?pick=slug,slug), names AISW keywords, asks "what is this look or camera move called", or wants a prompt for Midjourney, Nano Banana Pro, GPT Image, Seedance, Veo, Kling or Runway built from library keywords.'
+description: 'Reads the AI and See Why Keyword Library (aiswlibrary.netlify.app): tested, plain-language prompt keywords for AI image and video models, covering styles, lighting, textures, palettes, camera movements, shot sizes, lenses, transitions and film looks. Use when the person pastes picks copied from the library ("I picked N keywords from the AI and See Why Keyword Library"), shares a picks link (?pick=slug,slug), names AISW keywords, asks "what is this look or camera move called", or wants a prompt for Midjourney, Nano Banana Pro, GPT Image, Seedance, Veo, Kling or Runway built from library keywords.'
 ---
 
 # AI and See Why keywords
@@ -11,7 +11,7 @@ The library is Cyan Brown's collection of tested prompt keywords. Each entry has
 
 Fetch the feed once per task:
 
-1. `https://library.aiandseewhy.com/api/v1/keywords.json`
+1. `https://aiswlibrary.netlify.app/api/v1/keywords.json`
 2. If that fails, `https://raw.githubusercontent.com/Cyanjb/aiswlibrary/main/api/v1/keywords.json`
 
 Each item has `slug`, `name`, `category`, `section`, `definition`, `when_to_use`, `prompt_example`, `pairs_well_with`, `works_in`, `tags`, `media` and `url`. Never invent an entry; if a keyword is not in the feed, say so and offer the closest matches.
