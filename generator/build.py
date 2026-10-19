@@ -63,6 +63,12 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 .card .thumb.portrait img,.card .thumb.portrait video{object-fit:contain}
 .card .thumb+.pick+h3{padding-right:0}
 .card>small{display:block;padding-right:74px}.card .thumb~small{padding-right:0}
+.cprev{display:grid;margin:-18px -18px 14px;aspect-ratio:16/9;overflow:hidden;border-radius:14px 14px 0 0;background:#0d0b11;border-bottom:1px solid var(--line);gap:2px}
+.cprev img{width:100%;height:100%;min-height:0;object-fit:cover;display:block}
+.cprev.trio{grid-template-columns:repeat(3,1fr)}.cprev.trio img{object-fit:contain}
+.cprev.quad{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.cprev.words{gap:8px;align-content:center;justify-items:start;padding:16px 18px;background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--tint) 34%,#1b1722) 0%,#15111a 70%)}
+.cprev.words span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.86rem;color:var(--ink);border:1px solid color-mix(in srgb,var(--tint) 55%,transparent);border-radius:99px;padding:3px 12px;background:rgba(18,16,22,.45)}
 .pick{font:inherit;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:3px 12px;background:#0d0b11;color:var(--soft);cursor:pointer;white-space:nowrap}
 .pick:hover{border-color:var(--teal);color:var(--teal)}
 .pick[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#121016}
@@ -250,6 +256,27 @@ for c in cats:
     urls.append(f"/category/{c['category_id']}.html")
 
 # Homepage
+PREVIEW_TINTS = ["#ff5fa2", "#4fd8c4", "#e8b64c", "#9b7bff"]
+
+def cat_preview(c):
+    """Banner for a homepage category card: its own stills when it has some, else sample keyword names."""
+    items = sorted(kw_by_cat.get(c["category_id"], []), key=lambda k: k["name"])
+    stills = [p for p in (thumb_of(k)[0] for k in items) if p]
+    href = f'category/{c["category_id"]}.html'
+    if stills:
+        portrait = [p for p in stills if shape_of(p)[1] == "portrait"]
+        if len(portrait) >= 3:
+            pick, layout = portrait[:3], "trio"
+        elif len(stills) >= 4:
+            pick, layout = stills[:4], "quad"
+        else:
+            pick, layout = stills[:1], "single"
+        imgs = "".join(f'<img src="assets/{html.escape(p)}" alt="" loading="lazy">' for p in pick)
+        return f'<a class="cprev {layout}" href="{href}" tabindex="-1" aria-hidden="true">{imgs}</a>'
+    tint = PREVIEW_TINTS[sum(map(ord, c["category_id"])) % len(PREVIEW_TINTS)]
+    words = "".join(f"<span>{html.escape(k['name'])}</span>" for k in items[:3])
+    return f'<a class="cprev words" style="--tint:{tint}" href="{href}" tabindex="-1" aria-hidden="true">{words}</a>'
+
 sec_html = ""
 for s in sections:
     sec_cats = [c for c in cats if c["section_id"] == s["section_id"]]
@@ -258,7 +285,7 @@ for s in sections:
     for c in sec_cats:
         n = len(kw_by_cat.get(c["category_id"], []))
         count = f"{n} keywords" if n else "migrating from the archive"
-        cards += f"""<div class="card"><h3><a href="category/{c['category_id']}.html">{html.escape(c['name'])}</a></h3><p>{count}</p></div>"""
+        cards += f"""<div class="card">{cat_preview(c)}<h3><a href="category/{c['category_id']}.html">{html.escape(c['name'])}</a></h3><p>{count}</p></div>"""
     sec_html += f"<h2>{html.escape(s['name'])}{lock}</h2><div class=\"grid\">{cards}</div>"
 # Search index + filter groups
 import json as _json
