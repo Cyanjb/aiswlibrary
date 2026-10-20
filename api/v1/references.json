@@ -1,0 +1,83 @@
+{
+ "checked": "October 2026",
+ "page": "https://aiswlibrary.netlify.app/references.html",
+ "sites": [
+  {
+   "slug": "stillslab",
+   "name": "StillsLab",
+   "url": "https://stillslab.com",
+   "kind": "Film frames you can search by idea",
+   "what": "Frames from films, series, music videos and commercials. Type a plain idea like golden hour or Dutch angle and it filters by shot, light, color and composition. Many frames list the lens and camera too.",
+   "best_for": "Matching a keyword to real film examples. Every camera, lens and lighting keyword page in this library links here.",
+   "cost": "Free to browse and search. Pro is about $7 a month.",
+   "tip": "Try Visual Search: upload a frame you love and it finds others with the same light or palette (3 a day on the free plan).",
+   "search_url": "https://stillslab.com/filter?search={q}"
+  },
+  {
+   "slug": "shot-cafe",
+   "name": "Shot.Café",
+   "url": "https://shot.cafe",
+   "kind": "Film stills with detailed tags",
+   "what": "About 24,000 shots from around 200 films and commercials, each tagged in detail: places, props, lighting and color.",
+   "best_for": "Finding one exact setup, like a car interior at night or a lamp-lit bedroom.",
+   "cost": "Free to browse.",
+   "tip": "Click tags instead of typing. Stack two (night plus car interior) and the results narrow fast.",
+   "search_url": ""
+  },
+  {
+   "slug": "filmgrab",
+   "name": "FilmGrab",
+   "url": "https://film-grab.com",
+   "kind": "Hand-picked stills, one film at a time",
+   "what": "Curated galleries of stills from thousands of films, browsable by director, cinematographer and genre.",
+   "best_for": "Studying how one film keeps the same look from shot to shot.",
+   "cost": "Free. No account needed.",
+   "tip": "Open one film and look at 10 frames in a row. Write down what never changes. That list is the film's style formula.",
+   "search_url": ""
+  },
+  {
+   "slug": "screenmusings",
+   "name": "Screenmusings",
+   "url": "https://screenmusings.org",
+   "kind": "Whole scenes, frame by frame",
+   "what": "Screencaps that follow complete scenes in order, plus a search by color.",
+   "best_for": "Seeing how shots connect (wide, then close, then a detail) so you can plan a multi-shot AI scene.",
+   "cost": "Free to browse.",
+   "tip": "Follow one scene start to finish and copy its shot order into your shot list. Then write one prompt per shot.",
+   "search_url": ""
+  },
+  {
+   "slug": "flim",
+   "name": "Flim",
+   "url": "https://flim.ai",
+   "kind": "AI search for film stills",
+   "what": "Describe a look in a sentence and it finds matching frames from a very large library.",
+   "best_for": "When you can describe the feeling but don't know the word for it yet.",
+   "cost": "Free plan: unlimited search and 1 download a day. Paid plans from about €13 a month.",
+   "tip": "Search freely, then come back here and find the keyword name for what you found.",
+   "search_url": ""
+  },
+  {
+   "slug": "film-vibes",
+   "name": "Film Vibes",
+   "url": "https://filmvibes.io",
+   "kind": "Stills and short clips from films, ads and music videos",
+   "what": "Searchable stills plus short GIF clips, with lots of commercials and music videos alongside films.",
+   "best_for": "Camera moves and ad-style looks. A clip shows the movement that a single still can't.",
+   "cost": "Free trial, then from about $7 a month. Their plans cover non-commercial, reference and educational use only.",
+   "tip": "Pair it with the Camera Movements keywords: find a clip of the move, then use the keyword name in your video prompt.",
+   "search_url": ""
+  },
+  {
+   "slug": "moviestillsdb",
+   "name": "MovieStillsDB",
+   "url": "https://www.moviestillsdb.com",
+   "kind": "Official stills and behind-the-scenes photos",
+   "what": "A huge community archive of publicity stills, behind-the-scenes photos, posters and lobby cards.",
+   "best_for": "Costumes, sets and props. Less useful for framing, since many are posed publicity photos.",
+   "cost": "Free to browse.",
+   "tip": "Behind-the-scenes photos show where the lights and camera really were. Great for learning lighting setups.",
+   "search_url": ""
+  }
+ ]
+}

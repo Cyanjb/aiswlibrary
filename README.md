@@ -3,9 +3,9 @@
 The plain-language library of tested AI prompt keywords. Freemium: public pages drive SEO and Pinterest traffic; Advanced Keywords and Sref Codes sections are vault-member content.
 
 ## Layout
-- **/data/** — the database: sections.csv, categories.csv, keywords.csv
+- **/data/** — the database: sections.csv, categories.csv, keywords.csv, references.csv
 - **/generator/** — build.py reads /data, writes the site to the repo root. Run: `cd generator && python3 build.py`
-- **Repo root** — generated site (category/, keyword/, api/, index.html, sitemap.xml, style.css, robots.txt, llms.txt, picks.js). Never hand-edit; only data/, generator/ and skill/ are editable.
+- **Repo root** — generated site (category/, keyword/, api/, index.html, references.html, sitemap.xml, style.css, robots.txt, llms.txt, picks.js). Never hand-edit; only data/, generator/ and skill/ are editable.
 - **/skill/aisw-keywords/** — Claude skill that reads the library feed and turns picks into prompts
 
 ## Pick and send to AI
@@ -25,8 +25,13 @@ The plain-language library of tested AI prompt keywords. Freemium: public pages 
 - `generator/ui-demos/`: the 48 UI Components and Web Motion and Effects demos, drawn in code (`kit.js` plus one file per group in `demos/`). Every demo is a pure function of time, so it loops seamlessly and renders the same every time.
 - Check by eye: `node generator/ui-demos/preview.mjs <group>.js out.png`. Render to `assets/ui-motion/`: `node generator/ui-demos/render.mjs [slug ...]`. `BRIEF.md` there holds the rules for adding a demo.
 
+## Film Reference Finder
+- `references.html`: free sites for finding real film frames (StillsLab, Shot.Café, FilmGrab, Screenmusings, Flim, Film Vibes, MovieStillsDB), a three-step study method for students, and the study-not-copy note. Linked from the header on every page.
+- Source: `data/references.csv` (one row per site; `search_url` takes `{q}`). Costs were checked October 2026; update `REFS_CHECKED` in build.py when you recheck them.
+- Keyword pages in still-friendly categories (`STILL_CATS` in build.py: shot sizes, lenses, lighting, film looks, composition, photo angles, palettes, weather) get a "See it in real films" StillsLab search link. Camera moves and transitions (`MOTION_CATS`) point to clip sites instead.
+
 ## AI feed
-- `/api/v1/keywords.json` (every published entry, full fields) and `/api/v1/categories.json`, rebuilt on every build
+- `/api/v1/keywords.json` (every published entry, full fields), `/api/v1/categories.json` and `/api/v1/references.json` (film reference sites), rebuilt on every build
 - `/llms.txt` tells AI agents where the feed is
 - Install the skill by copying `skill/aisw-keywords` to `~/.claude/skills/` (all projects) or `.claude/skills/` in a project
 

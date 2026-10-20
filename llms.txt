@@ -5,6 +5,7 @@
 ## For AI agents
 - Full feed (JSON): https://aiswlibrary.netlify.app/api/v1/keywords.json
 - Categories (JSON): https://aiswlibrary.netlify.app/api/v1/categories.json
+- Film reference sites (JSON): https://aiswlibrary.netlify.app/api/v1/references.json. Where to find real film frames for a keyword; a search_url with {q} takes the keyword name.
 - Fallback if the domain is unreachable: https://raw.githubusercontent.com/Cyanjb/aiswlibrary/main/api/v1/keywords.json
 - A picks link looks like https://aiswlibrary.netlify.app/index.html?pick=golden-hour,push-in and lists keyword slugs in the order the person chose them.
 - Use the keyword names as written. Keep the person's subject; the keywords describe style, light, camera and edit.

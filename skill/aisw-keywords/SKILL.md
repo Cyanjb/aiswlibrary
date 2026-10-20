@@ -34,6 +34,10 @@ Each item has `slug`, `name`, `category`, `section`, `definition`, `when_to_use`
    - Video models (Seedance, Veo, Kling, Runway): subject and action first, then one camera movement, then shot size and lens, then light and grade. One camera move per shot unless they ask for more. Transitions belong between shots, so write each shot separately.
 6. When two picks fight (two camera moves on one shot, high-key with low-key), point it out and offer the fix in one line.
 
+## Real film examples
+
+If they want to see a keyword in real films, or need reference frames to study, fetch `https://aiswlibrary.netlify.app/api/v1/references.json` (fallback: `https://raw.githubusercontent.com/Cyanjb/aiswlibrary/main/api/v1/references.json`). For a camera, lens or lighting keyword, give the StillsLab link by putting the keyword name into its `search_url`. For camera moves, point to Film Vibes (clips) or Screenmusings (whole scenes). Remind them to study the frames and describe the look with keywords, not upload the frames into a generator for work they publish.
+
 ## Reply format
 
 Give the finished prompt or prompts first. Then list each keyword used with its entry link, and anything you changed or could not use.

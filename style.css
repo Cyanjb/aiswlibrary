@@ -4,6 +4,8 @@
 a{color:var(--teal);text-decoration:none}a:hover{color:var(--pink)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header{border-bottom:1px solid var(--line);padding:18px 0}
+header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 16px}
+.nav{font-size:.92rem}
 .brand{font-size:1.15rem;color:var(--ink)}.brand b{color:var(--pink)}
 .hero{padding:56px 0 36px}.hero h1{font-size:2.3rem;margin:0 0 10px}.hero p{color:var(--soft);max-width:640px}
 h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
@@ -62,3 +64,13 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 #tray .msg{color:var(--gold);font-size:.85rem}
 @media (max-width:600px){#tray{padding:10px 0}#tray .names{display:none}#tray .row{gap:6px}#tray button{font-size:.76rem;padding:6px 10px}#tray .count{font-size:.85rem}#tray .lg{display:none}#tray .cap::first-letter{text-transform:uppercase}}
 .howto{color:var(--soft);font-size:.92rem;border-left:3px solid var(--teal);padding:4px 0 4px 14px;margin:18px 0}
+.steps{counter-reset:step;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0}
+.steps li{counter-increment:step;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;color:var(--soft);font-size:.92rem}
+.steps li::before{content:counter(step);display:block;color:var(--pink);font-size:1.6rem;line-height:1;margin-bottom:8px}
+.steps b{color:var(--ink)}
+.ref h3 a{color:var(--ink)}.ref h3 a:hover{color:var(--pink)}
+.ref .kind{color:var(--gold);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:6px}
+.ref .label{margin-top:14px}
+.ref .tip{border-left:3px solid var(--pink);padding-left:10px}
+.ref .go{display:inline-block;margin-top:14px;font-size:.9rem}
+.seefilm{color:var(--soft);font-size:.95rem}

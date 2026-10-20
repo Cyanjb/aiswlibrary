@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """AI and See Why Keyword Library generator. Reads ../data, writes site to repo root."""
-import csv, os, shutil, html
+import csv, os, shutil, html, urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA, DIST = os.path.join(os.path.dirname(ROOT), "data"), os.path.dirname(ROOT)
@@ -20,6 +20,15 @@ cats_by_id = {c["category_id"]: c for c in cats}
 kw_by_cat = {}
 for k in kws: kw_by_cat.setdefault(k["category_id"], []).append(k)
 kw_by_slug = {k["slug"]: k for k in kws}
+refs = sorted(rows("references.csv"), key=lambda r: int(r["order"]))
+
+# Film reference sites (data/references.csv). Costs were checked on these dates; recheck when you edit the file.
+REFS_CHECKED = "October 2026"
+# Categories whose keywords show up in a single frame get a StillsLab search link on their pages
+STILL_CATS = {"shot-sizes-angles", "lenses-optics", "cinematic-lighting", "film-looks-grades", "composition",
+              "lighting", "photo-angles", "colors-palettes", "weather"}
+# Moves and edits need a clip, not a still
+MOTION_CATS = {"camera-movements", "transitions-editing"}
 
 CSS = """
 :root{--bg:#121016;--card:#1b1722;--ink:#f2edf5;--soft:#a89db3;--pink:#ff5fa2;--teal:#4fd8c4;--gold:#e8b64c;--line:#2c2536}
@@ -27,6 +36,8 @@ CSS = """
 a{color:var(--teal);text-decoration:none}a:hover{color:var(--pink)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header{border-bottom:1px solid var(--line);padding:18px 0}
+header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 16px}
+.nav{font-size:.92rem}
 .brand{font-size:1.15rem;color:var(--ink)}.brand b{color:var(--pink)}
 .hero{padding:56px 0 36px}.hero h1{font-size:2.3rem;margin:0 0 10px}.hero p{color:var(--soft);max-width:640px}
 h2{color:var(--pink);margin-top:44px}h3{margin:0 0 6px}
@@ -85,6 +96,16 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 #tray .msg{color:var(--gold);font-size:.85rem}
 @media (max-width:600px){#tray{padding:10px 0}#tray .names{display:none}#tray .row{gap:6px}#tray button{font-size:.76rem;padding:6px 10px}#tray .count{font-size:.85rem}#tray .lg{display:none}#tray .cap::first-letter{text-transform:uppercase}}
 .howto{color:var(--soft);font-size:.92rem;border-left:3px solid var(--teal);padding:4px 0 4px 14px;margin:18px 0}
+.steps{counter-reset:step;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0}
+.steps li{counter-increment:step;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;color:var(--soft);font-size:.92rem}
+.steps li::before{content:counter(step);display:block;color:var(--pink);font-size:1.6rem;line-height:1;margin-bottom:8px}
+.steps b{color:var(--ink)}
+.ref h3 a{color:var(--ink)}.ref h3 a:hover{color:var(--pink)}
+.ref .kind{color:var(--gold);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:6px}
+.ref .label{margin-top:14px}
+.ref .tip{border-left:3px solid var(--pink);padding-left:10px}
+.ref .go{display:inline-block;margin-top:14px;font-size:.9rem}
+.seefilm{color:var(--soft);font-size:.95rem}
 """
 
 SKILL_HINT = "Pick keywords as you browse, then press Copy for AI and paste into ChatGPT, Claude or any AI. Copy keywords gives a plain list for Midjourney or Seedance."
@@ -159,10 +180,28 @@ def page(title, desc, body, canonical, depth=0):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)}</title><meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}"><link rel="stylesheet" href="{pre}style.css"></head>
-<body><header><div class="wrap"><a class="brand" href="{pre}index.html">AI and See <b>Why</b> · Keyword Library</a></div></header>
+<body><header><div class="wrap"><a class="brand" href="{pre}index.html">AI and See <b>Why</b> · Keyword Library</a><a class="nav" href="{pre}references.html">Film references</a></div></header>
 <div class="wrap">{body}</div>
 <footer><div class="wrap">Every keyword tested, explained in plain language, and updated {UPDATED}. Built by Cyan Brown for people who were never shown how. <a href="https://www.aiandseewhy.com">aiandseewhy.com</a></div></footer>
 <script src="{pre}picks.js" defer></script><script src="{pre}gallery.js" defer></script></body></html>"""
+
+def see_in_films(k, c):
+    """Where to see a keyword in real films: a StillsLab search for still-friendly categories, a pointer to clip sites for moves."""
+    cid = c["category_id"]
+    if cid in STILL_CATS:
+        sl = next(r for r in refs if r["slug"] == "stillslab")
+        q = urllib.parse.quote(k["name"])
+        link = html.escape(sl["search_url"].replace("{q}", q))
+        return (f'<div class="label">See it in real films</div><p class="seefilm"><a href="{link}" target="_blank" rel="noopener">'
+                f'Search StillsLab for &ldquo;{html.escape(k["name"])}&rdquo;</a>, free real film frames. '
+                f'Look at three and name what you see. <a href="../references.html">More film reference sites</a></p>')
+    if cid in MOTION_CATS:
+        return (f'<div class="label">See it in real films</div><p class="seefilm">A still can\'t show a move. '
+                f'Search a clip site like <a href="https://filmvibes.io" target="_blank" rel="noopener">Film Vibes</a> for '
+                f'&ldquo;{html.escape(k["name"])}&rdquo;, or follow a whole scene on '
+                f'<a href="https://screenmusings.org" target="_blank" rel="noopener">Screenmusings</a>. '
+                f'<a href="../references.html">More film reference sites</a></p>')
+    return ""
 
 urls = []
 
@@ -170,7 +209,7 @@ urls = []
 for d in ["category", "keyword", "api"]:
     p = os.path.join(DIST, d)
     if os.path.exists(p): shutil.rmtree(p)
-for f in ["index.html", "sitemap.xml", "robots.txt", "style.css", "picks.js", "gallery.js", "llms.txt"]:
+for f in ["index.html", "references.html", "sitemap.xml", "robots.txt", "style.css", "picks.js", "gallery.js", "llms.txt"]:
     p = os.path.join(DIST, f)
     if os.path.exists(p): os.remove(p)
 os.makedirs(os.path.join(DIST, "category"), exist_ok=True)
@@ -225,7 +264,8 @@ for k in kws:
 {pairs}
 <div class="label">Works in</div><p>{html.escape(k['works_in'].replace(';', ' · '))}</p>
 {tagchips}
-<div class="label">Examples</div>{imgs}"""
+<div class="label">Examples</div>{imgs}
+{see_in_films(k, c)}"""
     body = f"""<p class="crumb"><a href="../index.html">Library</a> / <a href="../category/{c['category_id']}.html">{html.escape(c['name'])}</a> / {html.escape(k['name'])}</p>
 <div class="hero"><span class="tag">{html.escape(c['name'])}</span><h1>{html.escape(k['name'])}</h1>{'' if member else pick_btn(k)}</div>
 <div class="entry">{body_core}</div>{'' if member else CTA}"""
@@ -368,8 +408,40 @@ render();
 </script>"""
 search_js = search_js.replace("INDEX_JSON", _json.dumps(index, ensure_ascii=False))
 
+# Film Reference Finder page
+ref_cards = ""
+for r in refs:
+    ref_cards += f"""<div class="card ref"><span class="kind">{html.escape(r['kind'])}</span>
+<h3><a href="{html.escape(r['url'])}" target="_blank" rel="noopener">{html.escape(r['name'])}</a></h3>
+<p>{html.escape(r['what'])}</p>
+<div class="label">Best for</div><p>{html.escape(r['best_for'])}</p>
+<div class="label">Cost</div><p>{html.escape(r['cost'])}</p>
+<div class="label">Try this</div><p class="tip">{html.escape(r['tip'])}</p>
+<a class="go" href="{html.escape(r['url'])}" target="_blank" rel="noopener">Open {html.escape(r['name'])} &rarr;</a></div>"""
+ref_body = f"""<p class="crumb"><a href="index.html">Library</a> / Film references</p>
+<div class="hero"><h1>Film Reference Finder</h1>
+<p>Free places to find real film frames, and how to turn what you see into keywords. Great directors learned by copying shots they loved. You can too.</p></div>
+<h2>How to use a film frame</h2>
+<ol class="steps">
+<li><b>Find it.</b> Open a camera, lens or lighting keyword and press its StillsLab link, or search one of the sites below.</li>
+<li><b>Name it.</b> Look at three frames and describe them in library words: shot size, angle, lens, light, color. Press + Pick on each keyword.</li>
+<li><b>Prompt it.</b> Press Copy for AI or Copy keywords and write your own scene. Your subject, their technique.</li>
+</ol>
+<p class="howto">Five-minute drill: open any site below, find a frame you love, and write three keywords for it before you look anything up. Then search this library and check how close you got.</p>
+<h2>Where to look</h2>
+<div class="grid">{ref_cards}</div>
+<div class="entry"><div class="label">Study freely, create your own</div>
+<p>Film frames belong to the studios that made them. Use them to learn and for private mood boards. Don't upload them as image references for work you publish or sell, and don't recreate real actors' faces. Describe the look with keywords instead. Each site has its own terms too.</p></div>
+<p class="howto">Costs checked {REFS_CHECKED}. Sites change their plans, so check before you pay. These are independent sites; AI and See Why isn't paid to list them.</p>"""
+open(os.path.join(DIST, "references.html"), "w").write(
+    page("Free Film Reference Sites for AI Prompts: Find Real Movie Frames | AI and See Why",
+         "Where to find real film frames for free, and how to turn a movie still into AI prompt keywords. StillsLab, Shot.Café, FilmGrab and more, explained for beginners.",
+         ref_body, f"{DOMAIN}/references.html"))
+urls.append("/references.html")
+
 body = f"""<div class="hero"><h1>The Keyword Library</h1>
-<p>Every prompt keyword tested, explained without jargon, and shown with real examples. Built from three years of experiments so you don't have to guess what a word will do to your image.</p></div>
+<p>Every prompt keyword tested, explained without jargon, and shown with real examples. Built from three years of experiments so you don't have to guess what a word will do to your image.</p>
+<p>New: the <a href="references.html">Film Reference Finder</a>. Free places to see any camera or lighting keyword in real films.</p></div>
 <input id="q" class="searchbox" type="search" placeholder="Try: golden light, pastel colors, cute, camera movement..." autocomplete="off">
 <p class="howto">{SKILL_HINT}</p>
 {chips_html}
@@ -408,6 +480,10 @@ for k in sorted(kws, key=lambda x: x["slug"]):
     })
 with open(os.path.join(api_dir, "keywords.json"), "w", encoding="utf-8") as f:
     _json.dump({"library": "AI and See Why Keyword Library", "updated": UPDATED, "count": len(feed), "keywords": feed}, f, ensure_ascii=False, indent=1)
+with open(os.path.join(api_dir, "references.json"), "w", encoding="utf-8") as f:
+    _json.dump({"checked": REFS_CHECKED, "page": f"{DOMAIN}/references.html",
+                "sites": [{k: r[k] for k in ("slug", "name", "url", "kind", "what", "best_for", "cost", "tip", "search_url")} for r in refs]},
+               f, ensure_ascii=False, indent=1)
 with open(os.path.join(api_dir, "categories.json"), "w", encoding="utf-8") as f:
     _json.dump([{"category_id": c["category_id"], "name": c["name"], "section": secs_by_id[c["section_id"]]["name"],
                  "count": len(kw_by_cat.get(c["category_id"], []))} for c in cats], f, ensure_ascii=False, indent=1)
@@ -419,6 +495,7 @@ llms = f"""# AI and See Why Keyword Library
 ## For AI agents
 - Full feed (JSON): {DOMAIN}/api/v1/keywords.json
 - Categories (JSON): {DOMAIN}/api/v1/categories.json
+- Film reference sites (JSON): {DOMAIN}/api/v1/references.json. Where to find real film frames for a keyword; a search_url with {{q}} takes the keyword name.
 - Fallback if the domain is unreachable: https://raw.githubusercontent.com/Cyanjb/aiswlibrary/main/api/v1/keywords.json
 - A picks link looks like {DOMAIN}/index.html?pick=golden-hour,push-in and lists keyword slugs in the order the person chose them.
 - Use the keyword names as written. Keep the person's subject; the keywords describe style, light, camera and edit.
