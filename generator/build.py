@@ -106,6 +106,9 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 .ref .tip{border-left:3px solid var(--pink);padding-left:10px}
 .ref .go{display:inline-block;margin-top:14px;font-size:.9rem}
 .seefilm{color:var(--soft);font-size:.95rem}
+.seefilm-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}.seefilm-row .seefilm{flex:1 1 260px;margin:0}
+.seefilm-row video{width:240px;max-width:100%;aspect-ratio:16/9;border-radius:10px;border:1px solid var(--line);display:block;background:#0d0b11}
+.method{width:100%;max-width:760px;aspect-ratio:16/9;border-radius:16px;border:1px solid var(--line);display:block;margin:18px 0;background:#0d0b11}
 """
 
 SKILL_HINT = "Pick keywords as you browse, then press Copy for AI and paste into ChatGPT, Claude or any AI. Copy keywords gives a plain list for Midjourney or Seedance."
@@ -185,6 +188,14 @@ def page(title, desc, body, canonical, depth=0):
 <footer><div class="wrap">Every keyword tested, explained in plain language, and updated {UPDATED}. Built by Cyan Brown for people who were never shown how. <a href="https://www.aiandseewhy.com">aiandseewhy.com</a></div></footer>
 <script src="{pre}picks.js" defer></script><script src="{pre}gallery.js" defer></script></body></html>"""
 
+def ref_video(name, cls="", pre=""):
+    """Autoplaying loop for a Film Reference Finder demo in assets/references/ (drawn in generator/ui-demos/demos/refs.js)."""
+    if not os.path.exists(os.path.join(ASSETS, "references", f"{name}.mp4")):
+        return ""
+    src = html.escape(f"{pre}assets/references/{name}")
+    c = f' class="{cls}"' if cls else ""
+    return f'<video{c} src="{src}.mp4" poster="{src}.jpg" autoplay muted loop playsinline aria-hidden="true"></video>'
+
 def see_in_films(k, c):
     """Where to see a keyword in real films: a StillsLab search for still-friendly categories, a pointer to clip sites for moves."""
     cid = c["category_id"]
@@ -192,15 +203,17 @@ def see_in_films(k, c):
         sl = next(r for r in refs if r["slug"] == "stillslab")
         q = urllib.parse.quote(k["name"])
         link = html.escape(sl["search_url"].replace("{q}", q))
-        return (f'<div class="label">See it in real films</div><p class="seefilm"><a href="{link}" target="_blank" rel="noopener">'
+        return (f'<div class="label">See it in real films</div><div class="seefilm-row">{ref_video("ref-see-still", pre="../")}'
+                f'<p class="seefilm"><a href="{link}" target="_blank" rel="noopener">'
                 f'Search StillsLab for &ldquo;{html.escape(k["name"])}&rdquo;</a>, free real film frames. '
-                f'Look at three and name what you see. <a href="../references.html">More film reference sites</a></p>')
+                f'Look at three and name what you see. <a href="../references.html">More film reference sites</a></p></div>')
     if cid in MOTION_CATS:
-        return (f'<div class="label">See it in real films</div><p class="seefilm">A still can\'t show a move. '
+        return (f'<div class="label">See it in real films</div><div class="seefilm-row">{ref_video("ref-see-motion", pre="../")}'
+                f'<p class="seefilm">A still can\'t show a move. '
                 f'Search a clip site like <a href="https://filmvibes.io" target="_blank" rel="noopener">Film Vibes</a> for '
                 f'&ldquo;{html.escape(k["name"])}&rdquo;, or follow a whole scene on '
                 f'<a href="https://screenmusings.org" target="_blank" rel="noopener">Screenmusings</a>. '
-                f'<a href="../references.html">More film reference sites</a></p>')
+                f'<a href="../references.html">More film reference sites</a></p></div>')
     return ""
 
 urls = []
@@ -411,7 +424,9 @@ search_js = search_js.replace("INDEX_JSON", _json.dumps(index, ensure_ascii=Fals
 # Film Reference Finder page
 ref_cards = ""
 for r in refs:
-    ref_cards += f"""<div class="card ref"><span class="kind">{html.escape(r['kind'])}</span>
+    vid = ref_video(f"ref-{r['slug']}")
+    thumb = f'<div class="thumb">{vid}</div>' if vid else ""
+    ref_cards += f"""<div class="card ref">{thumb}<span class="kind">{html.escape(r['kind'])}</span>
 <h3><a href="{html.escape(r['url'])}" target="_blank" rel="noopener">{html.escape(r['name'])}</a></h3>
 <p>{html.escape(r['what'])}</p>
 <div class="label">Best for</div><p>{html.escape(r['best_for'])}</p>
@@ -422,6 +437,7 @@ ref_body = f"""<p class="crumb"><a href="index.html">Library</a> / Film referenc
 <div class="hero"><h1>Film Reference Finder</h1>
 <p>Free places to find real film frames, and how to turn what you see into keywords. Great directors learned by copying shots they loved. You can too.</p></div>
 <h2>How to use a film frame</h2>
+{ref_video("ref-method", "method")}
 <ol class="steps">
 <li><b>Find it.</b> Open a camera, lens or lighting keyword and press its StillsLab link, or search one of the sites below.</li>
 <li><b>Name it.</b> Look at three frames and describe them in library words: shot size, angle, lens, light, color. Press + Pick on each keyword.</li>
@@ -432,7 +448,7 @@ ref_body = f"""<p class="crumb"><a href="index.html">Library</a> / Film referenc
 <div class="grid">{ref_cards}</div>
 <div class="entry"><div class="label">Study freely, create your own</div>
 <p>Film frames belong to the studios that made them. Use them to learn and for private mood boards. Don't upload them as image references for work you publish or sell, and don't recreate real actors' faces. Describe the look with keywords instead. Each site has its own terms too.</p></div>
-<p class="howto">Costs checked {REFS_CHECKED}. Sites change their plans, so check before you pay. These are independent sites; AI and See Why isn't paid to list them.</p>"""
+<p class="howto">The animations on this page are drawn in code to show how each site works. They are not screenshots of the sites or their films. Costs checked {REFS_CHECKED}. Sites change their plans, so check before you pay. These are independent sites; AI and See Why isn't paid to list them.</p>"""
 open(os.path.join(DIST, "references.html"), "w").write(
     page("Free Film Reference Sites for AI Prompts: Find Real Movie Frames | AI and See Why",
          "Where to find real film frames for free, and how to turn a movie still into AI prompt keywords. StillsLab, Shot.Café, FilmGrab and more, explained for beginners.",

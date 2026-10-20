@@ -1,5 +1,5 @@
 // Render every demo to assets/ui-motion/<id>.mp4 (30 fps, 2 loops) plus a <id>.jpg poster.
-// Usage: node render.mjs [id ...]   (no ids = all demos in demos/)
+// Usage: node render.mjs [id ...]   (no ids = all demos in demos/). OUT=<folder> renders into assets/<folder> instead.
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import { createServer } from 'node:http';
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -7,7 +7,7 @@ import { join, dirname, extname } from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 const dir = dirname(fileURLToPath(import.meta.url));
-const OUT = join(dir, '..', '..', 'assets', 'ui-motion'); mkdirSync(OUT, { recursive: true });
+const OUT = join(dir, '..', '..', 'assets', process.env.OUT || 'ui-motion'); mkdirSync(OUT, { recursive: true });
 const FPS = 30, LOOPS = 2;
 const files = readdirSync(join(dir, 'demos')).filter(f => f.endsWith('.js') && !f.startsWith('example'));
 const srv = createServer((q, s) => { try { const p = join(dir, decodeURIComponent(q.url.split('?')[0])); s.writeHead(200, { 'content-type': extname(p) === '.js' ? 'text/javascript' : 'text/html' }); s.end(readFileSync(p)); } catch { s.writeHead(404); s.end(); } }).listen(0);

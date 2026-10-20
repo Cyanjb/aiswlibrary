@@ -74,3 +74,6 @@ footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 120px;col
 .ref .tip{border-left:3px solid var(--pink);padding-left:10px}
 .ref .go{display:inline-block;margin-top:14px;font-size:.9rem}
 .seefilm{color:var(--soft);font-size:.95rem}
+.seefilm-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}.seefilm-row .seefilm{flex:1 1 260px;margin:0}
+.seefilm-row video{width:240px;max-width:100%;aspect-ratio:16/9;border-radius:10px;border:1px solid var(--line);display:block;background:#0d0b11}
+.method{width:100%;max-width:760px;aspect-ratio:16/9;border-radius:16px;border:1px solid var(--line);display:block;margin:18px 0;background:#0d0b11}

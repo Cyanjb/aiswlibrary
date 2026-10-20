@@ -28,6 +28,7 @@ The plain-language library of tested AI prompt keywords. Freemium: public pages 
 ## Film Reference Finder
 - `references.html`: free sites for finding real film frames (StillsLab, Shot.Café, FilmGrab, Screenmusings, Flim, Film Vibes, MovieStillsDB), a three-step study method for students, and the study-not-copy note. Linked from the header on every page.
 - Source: `data/references.csv` (one row per site; `search_url` takes `{q}`). Costs were checked October 2026; update `REFS_CHECKED` in build.py when you recheck them.
+- Animations: `generator/ui-demos/demos/refs.js` draws one loop per site (`ref-<slug>`), the Find, Name, Prompt method (`ref-method`) and the two keyword-page loops (`ref-see-still`, `ref-see-motion`). Every film frame in them is drawn in code: no real films, no real people. Render with `cd generator/ui-demos && OUT=references node render.mjs ref-stillslab ...` into `assets/references/`. A site row with no `ref-<slug>.mp4` just shows its card without a clip.
 - Keyword pages in still-friendly categories (`STILL_CATS` in build.py: shot sizes, lenses, lighting, film looks, composition, photo angles, palettes, weather) get a "See it in real films" StillsLab search link. Camera moves and transitions (`MOTION_CATS`) point to clip sites instead.
 
 ## AI feed
