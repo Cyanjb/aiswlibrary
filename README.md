@@ -39,7 +39,8 @@ Term + plain definition + when to use it + example prompt phrase. Beginner voice
 
 ## Adding keywords
 Add a row to keywords.csv (status=published), rebuild, upload changed files to GitHub. Netlify deploys automatically.
-Rows with source=claude-2026-10-18 were written by Claude to fill empty categories. When the Discord archive is migrated, a tested archive post replaces the Claude row for the same keyword (keep the slug).
+Rows with source=claude-2026-10-18 were written by Claude to fill empty categories.
+Rows with source=claude-2026-10-20 are camera moves found missing against aicameramovements.com (written fresh, not copied). Rows with source=opuscar-styles-2026-10-20 are motion styles from the lemo-opuscar library (github.com/lemomo-ai/lemo-opuscar, MIT) that the library did not have; definitions are written in the library voice. Neither batch has example media yet. When the Discord archive is migrated, a tested archive post replaces the Claude row for the same keyword (keep the slug).
 
 ## Style samples
 `assets/style-samples/` holds code-animated style clips made with the huashu-art-motion skill (rows with source=huashu-art-motion-2026-10-18, added by `generator/style_samples_batch.py`). They show the look of a style, not a prompt result, so build.py captions every clip from that folder as a style sample. When a real tested result exists for the keyword, add it to `images` ahead of the sample (or replace it).

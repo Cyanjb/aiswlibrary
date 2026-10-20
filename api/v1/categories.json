@@ -411,7 +411,7 @@
   "category_id": "camera-movements",
   "name": "Camera Movements",
   "section": "Video and Cinematography",
-  "count": 44
+  "count": 54
  },
  {
   "category_id": "shot-sizes-angles",
@@ -465,7 +465,7 @@
   "category_id": "motion-graphics-styles",
   "name": "Motion Graphics Styles",
   "section": "Design and Motion Styles",
-  "count": 59
+  "count": 70
  },
  {
   "category_id": "ui-components",

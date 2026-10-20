@@ -1,7 +1,7 @@
 {
  "library": "AI and See Why Keyword Library",
  "updated": "October 2026",
- "count": 972,
+ "count": 993,
  "keywords": [
   {
    "slug": "16mm-film-look",
@@ -295,6 +295,36 @@
     "https://aiswlibrary.netlify.app/assets/clips/lens50.jpg"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/50mm-lens.html"
+  },
+  {
+   "slug": "60s-spy-titles",
+   "name": "60s Spy Titles",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A cut-paper opening title sequence for a spy film that never existed: bold flat colors, sneaking silhouettes, and the credits themselves becoming the sets.",
+   "when_to_use": "Fun for intros, trailers, event openers and anything with mystery or swagger. Keep it to three or four flat colors to hold the look.",
+   "prompt_example": "\"20-second opening titles, 60s spy title sequence, a silhouette sneaking between giant letters in red, black and mustard\"",
+   "pairs_well_with": [
+    "mid-century cutout",
+    "swiss bauhaus animation",
+    "halftone dossier"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "retro",
+    "vintage",
+    "bold",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/60s-spy-titles.html"
   },
   {
    "slug": "90s-anime",
@@ -1406,6 +1436,36 @@
     "https://aiswlibrary.netlify.app/assets/clips/arc.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/arc-shot.html"
+  },
+  {
+   "slug": "archive-light-table",
+   "name": "Archive Light Table",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Old photos, letters and film negatives lie on a glowing light table, and a magnifying loupe slides from one to the next as the story is told through the archive.",
+   "when_to_use": "Great for history, family stories and documentaries. It works best with real old material, so use it when you have the scans.",
+   "prompt_example": "\"30-second family history, archive light table, glass negatives and handwritten letters on a glowing table, a loupe sliding over each\"",
+   "pairs_well_with": [
+    "film photography",
+    "scrapbooking",
+    "halftone dossier"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "vintage",
+    "documentary",
+    "calm",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/archive-light-table.html"
   },
   {
    "slug": "argyle",
@@ -3728,6 +3788,34 @@
    "url": "https://aiswlibrary.netlify.app/keyword/car-reveal-one-take.html"
   },
   {
+   "slug": "car-to-car-tracking",
+   "name": "Car-to-Car Tracking",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera rides alongside a moving car at the same speed, as if filmed from another vehicle beside it.",
+   "when_to_use": "Use for road trips, car ads and chases. Say the speed and which side the camera is on, or the car may drift out of frame.",
+   "prompt_example": "\"car-to-car tracking shot beside a red convertible on a coastal road at sunset, the camera matching its speed\"",
+   "pairs_well_with": [
+    "tracking shot",
+    "chase one-take",
+    "golden hour"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "fast and exciting",
+    "video"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/car-to-car-tracking.html"
+  },
+  {
    "slug": "caravaggio",
    "name": "Caravaggio",
    "category": "Classics",
@@ -5759,6 +5847,34 @@
    "url": "https://aiswlibrary.netlify.app/keyword/crane-shot.html"
   },
   {
+   "slug": "crash-zoom-out",
+   "name": "Crash Zoom Out",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "A split-second zoom from tight to wide, the opposite of a snap zoom.",
+   "when_to_use": "Use for comedy and shock reveals, like a close-up that crashes out to show the chaos around them. Keep the clip short so the jolt lands.",
+   "prompt_example": "\"crash zoom out from his calm face to reveal the kitchen on fire around him\"",
+   "pairs_well_with": [
+    "snap zoom",
+    "zoom",
+    "whip pan"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "playful",
+    "fast and exciting"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/crash-zoom-out.html"
+  },
+  {
    "slug": "crayon-picture-book",
    "name": "Crayon Picture Book",
    "category": "Motion Graphics Styles",
@@ -6509,6 +6625,36 @@
     "https://aiswlibrary.netlify.app/assets/styles/ant.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/data-dense-enterprise-ui.html"
+  },
+  {
+   "slug": "data-physicalization",
+   "name": "Data Physicalization",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Real numbers built as real objects: stacks of coins, blocks or plates piled to exact scale on a tabletop, so you can see the size of a number.",
+   "when_to_use": "Brilliant for money, statistics and \"how big is it really\" posts. Every stack must match the real figure, or the whole idea falls apart.",
+   "prompt_example": "\"15-second explainer, data physicalization, stacks of coins on a wooden table growing to show five years of rising prices\"",
+   "pairs_well_with": [
+    "data chart animation",
+    "data viz explainer",
+    "tabletop product shot"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "business",
+    "tech",
+    "playful",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/data-physicalization.html"
   },
   {
    "slug": "data-viz-explainer",
@@ -7305,6 +7451,34 @@
    "url": "https://aiswlibrary.netlify.app/keyword/dreamscape.html"
   },
   {
+   "slug": "drone-pull-back-reveal",
+   "name": "Drone Pull-Back Reveal",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "A drone starts close on the subject and flies backward and up, revealing where they really are.",
+   "when_to_use": "Use for big reveals: someone alone on a cliff, a tiny boat on a huge sea, a house in the middle of nowhere. Save it for the last shot of a scene.",
+   "prompt_example": "\"drone pull-back reveal from a hiker on a rock, flying back and up to show the endless canyon around her\"",
+   "pairs_well_with": [
+    "aerial shot",
+    "dolly out",
+    "extreme wide shot"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "calm",
+    "spectacle"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/drone-pull-back-reveal.html"
+  },
+  {
    "slug": "dropdown-menu",
    "name": "Dropdown Menu",
    "category": "UI Components",
@@ -7566,6 +7740,34 @@
     "https://aiswlibrary.netlify.app/assets/style-samples/early-cgi.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/early-cgi.html"
+  },
+  {
+   "slug": "earth-zoom-out",
+   "name": "Earth Zoom Out",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "Starts tight on one person, then pulls up and out: the street, the city, the country, until the whole Earth hangs in space.",
+   "when_to_use": "Use to make one small moment feel huge, or to open or close a story about the world. The reverse (space down to one face) is a powerful opener too.",
+   "prompt_example": "\"earth zoom out from a girl on a rooftop in Cape Town, up through the clouds until the whole planet hangs in space\"",
+   "pairs_well_with": [
+    "aerial shot",
+    "infinite zoom",
+    "crane shot"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "dreamy",
+    "spectacle"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/earth-zoom-out.html"
   },
   {
    "slug": "eco-art",
@@ -8144,6 +8346,36 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/encaustic-art.html"
+  },
+  {
+   "slug": "engineering-briefing-board",
+   "name": "Engineering Briefing Board",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A real whiteboard wall in window light, where cut-out photos land with tape and arrows and notes get drawn between them as the plan comes together.",
+   "when_to_use": "Good for project breakdowns, how-it-works stories and team updates. It feels like a real work session, not a polished ad.",
+   "prompt_example": "\"30-second project breakdown, engineering briefing board, photos of a bridge taped to a whiteboard, red marker arrows linking them\"",
+   "pairs_well_with": [
+    "whiteboard animation",
+    "live whiteboard lesson",
+    "scrapbooking"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "business",
+    "tech",
+    "documentary",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/engineering-briefing-board.html"
   },
   {
    "slug": "english-country-house",
@@ -11297,6 +11529,36 @@
    "url": "https://aiswlibrary.netlify.app/keyword/halftone-comic.html"
   },
   {
+   "slug": "halftone-dossier",
+   "name": "Halftone Dossier",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A retro printed case file: cream paper, halftone dots in a few flat inks, huge headlines with misprinted shadows, rubber stamps and redaction bars.",
+   "when_to_use": "Perfect for true crime, mysteries, conspiracy teasers and \"the files\" style storytelling. It can feel serious, so it suits real investigations or playful fake ones.",
+   "prompt_example": "\"20-second mystery teaser, halftone dossier, a cream case file with red stamped headlines, halftone photos and black redaction bars sliding in\"",
+   "pairs_well_with": [
+    "halftone comic",
+    "60s spy titles",
+    "archive light table"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "retro",
+    "vintage",
+    "bold",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/halftone-dossier.html"
+  },
+  {
    "slug": "halston",
    "name": "Halston",
    "category": "Fashion Designers",
@@ -11607,6 +11869,36 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/harry-clarke.html"
+  },
+  {
+   "slug": "hd-2d",
+   "name": "HD-2D",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Pixel-art characters standing like paper cutouts inside a softly lit 3D miniature world, with glowing light, fog and dreamy blur at the edges.",
+   "when_to_use": "Lovely for game-style stories, fantasy trailers and nostalgic gamer content. It feels like a modern take on a 90s console game.",
+   "prompt_example": "\"15-second fantasy trailer, HD-2D style, pixel-art knight walking through a lantern-lit 3D village with tilt-shift blur and floating dust\"",
+   "pairs_well_with": [
+    "pixel rpg",
+    "pixel diorama",
+    "tilt shift miniature"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "retro",
+    "cute",
+    "playful",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/hd-2d.html"
   },
   {
    "slug": "head-dip-match-cut",
@@ -12736,6 +13028,34 @@
     "https://aiswlibrary.netlify.app/assets/ui-motion/infinite-scroll.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/infinite-scroll.html"
+  },
+  {
+   "slug": "infinite-zoom",
+   "name": "Infinite Zoom",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera keeps zooming into a detail that becomes a whole new scene, then into a detail of that scene, again and again with no cut.",
+   "when_to_use": "Use for dreamlike openings, hidden worlds, and \"everything is connected\" stories. Plan each layer, because models lose the thread after two or three.",
+   "prompt_example": "\"infinite zoom into her eye, which becomes a galaxy, which becomes a city at night\"",
+   "pairs_well_with": [
+    "earth zoom out",
+    "push-through",
+    "macro lens"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "dreamy",
+    "playful"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/infinite-zoom.html"
   },
   {
    "slug": "infinity-mirror",
@@ -14421,6 +14741,36 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/library-study.html"
+  },
+  {
+   "slug": "lidar-point-cloud",
+   "name": "LiDAR Point Cloud",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A real place shown as millions of glowing measured dots floating in the dark. A scan line sweeps through and the dots light up in layers.",
+   "when_to_use": "Perfect for tech, architecture, maps and \"how we measured it\" explainers. It looks most convincing when built from real scan data.",
+   "prompt_example": "\"20-second explainer, LiDAR point cloud of an old castle floating in black space, a laser line sweeping through and lighting up the walls\"",
+   "pairs_well_with": [
+    "hologram hud",
+    "blueprint",
+    "satellite briefing"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "futuristic",
+    "dark colors",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/lidar-point-cloud.html"
   },
   {
    "slug": "light-leak",
@@ -16343,6 +16693,36 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/microscape.html"
+  },
+  {
+   "slug": "microscope-story",
+   "name": "Microscope Story",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "One smooth journey down in scale, from a glass slide into the hidden world of cells, crystals or pollen, as it really looks under a microscope.",
+   "when_to_use": "Ideal for science, nature and health explainers. Keep the zoom continuous, because one long dive feels more magical than lots of cuts.",
+   "prompt_example": "\"20-second science explainer, microscope story, diving from a drop of pond water into swimming green algae cells\"",
+   "pairs_well_with": [
+    "infinite zoom",
+    "macro lens",
+    "data viz explainer"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "science",
+    "nature",
+    "dreamy",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/microscope-story.html"
   },
   {
    "slug": "mid-century-cutout",
@@ -18812,6 +19192,36 @@
    "url": "https://aiswlibrary.netlify.app/keyword/paper-map-journey.html"
   },
   {
+   "slug": "paper-pop-up-book",
+   "name": "Paper Pop-up Book",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A pop-up book on a real desk becomes a stage: paper scenery springs up from the page, flat cut-out characters perform, and turning the page changes the scene.",
+   "when_to_use": "Charming for kids' stories, invitations, travel stories and gentle explainers. Every change should come from a fold, a pull-tab or a page turn.",
+   "prompt_example": "\"20-second bedtime story, paper pop-up book, a castle unfolding from the page, a cut-out dragon sliding in on a pull-tab\"",
+   "pairs_well_with": [
+    "papercraft",
+    "paper storybook",
+    "paper cut lightbox"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "craft",
+    "cute",
+    "playful",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/paper-pop-up-book.html"
+  },
+  {
    "slug": "paper-storybook",
    "name": "Paper Storybook",
    "category": "Motion Graphics Styles",
@@ -19023,6 +19433,34 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/party-kei.html"
+  },
+  {
+   "slug": "pass-through-shot",
+   "name": "Pass-Through Shot",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera flies straight through a gap, like a window, a fence, a crowd or a ring, and carries on in the same scene.",
+   "when_to_use": "Use to make a space feel continuous and alive. Name the opening clearly. If you want to come out in a new scene, use Push-Through instead.",
+   "prompt_example": "\"the camera flies through the open kitchen window and glides across the busy room to the family at the table\"",
+   "pairs_well_with": [
+    "fpv drone",
+    "push-through",
+    "long take"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "fast and exciting",
+    "playful"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/pass-through-shot.html"
   },
   {
    "slug": "pasta-art",
@@ -20465,6 +20903,36 @@
     "https://aiswlibrary.netlify.app/assets/clips/profile.jpg"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/profile-shot.html"
+  },
+  {
+   "slug": "projection-on-white-model",
+   "name": "Projection on White Model",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A pure white scale model of a real place sits in a dark room, and a projector paints maps, colors and data onto it one layer at a time.",
+   "when_to_use": "Great for architecture, city planning, property and climate explainers. It shows information sitting on real shapes, so keep the model plain white.",
+   "prompt_example": "\"20-second city explainer, projection on white model, a white model of a town in a dark room with glowing flood maps projected onto it\"",
+   "pairs_well_with": [
+    "miniature",
+    "data viz explainer",
+    "lidar point cloud"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "architecture",
+    "tech",
+    "elegant",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/projection-on-white-model.html"
   },
   {
    "slug": "prussian-blue",
@@ -22053,6 +22521,36 @@
    "url": "https://aiswlibrary.netlify.app/keyword/sari.html"
   },
   {
+   "slug": "satellite-briefing",
+   "name": "Satellite Briefing",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Real satellite views of a place, turned grey like an analyst's screen, with thin white lines, target boxes and measurements drawn on the ground.",
+   "when_to_use": "Made for news, investigations, geography and serious explainers. It reads as factual, so use it for real places and true stories.",
+   "prompt_example": "\"20-second explainer, satellite briefing, grey aerial view of a harbor with white measurement lines and a lock-on box around a ship\"",
+   "pairs_well_with": [
+    "aerial shot",
+    "earth zoom out",
+    "lidar point cloud"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "documentary",
+    "serious",
+    "neutral colors",
+    "motion graphics"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/satellite-briefing.html"
+  },
+  {
    "slug": "saul-leiter",
    "name": "Saul Leiter",
    "category": "Photographers",
@@ -23436,6 +23934,34 @@
     "https://aiswlibrary.netlify.app/assets/clips/x-m-snapzoom.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/snap-zoom.html"
+  },
+  {
+   "slug": "snorricam",
+   "name": "Snorricam",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera is strapped to the actor's body, so their face stays locked in the middle while the world swings and lurches around them.",
+   "when_to_use": "Use for panic, drunkenness, a bad trip or a run for your life. It makes the viewer feel trapped inside the character.",
+   "prompt_example": "\"snorricam on a man running through a crowded station, his face fixed in the center, the world tilting and bouncing behind him\"",
+   "pairs_well_with": [
+    "handheld",
+    "close-up",
+    "dutch angle"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "fast and exciting",
+    "edgy"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/snorricam.html"
   },
   {
    "slug": "snow-leopard",
@@ -25735,6 +26261,33 @@
    "url": "https://aiswlibrary.netlify.app/keyword/through-the-window.html"
   },
   {
+   "slug": "tilt-down",
+   "name": "Tilt Down",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera pivots downward from a fixed spot, from the sky or someone's face down to what is below.",
+   "when_to_use": "Use to bring a scene back to earth, end on a clue at someone's feet, or show weight and sadness. Say the start and end points so the model knows where to stop.",
+   "prompt_example": "\"tilt down from the stormy sky to a single red umbrella on the empty street\"",
+   "pairs_well_with": [
+    "tilt up",
+    "high angle",
+    "crane shot"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "video"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/tilt-down.html"
+  },
+  {
    "slug": "tilt-shift-miniature",
    "name": "Tilt Shift Miniature",
    "category": "Motion Graphics Styles",
@@ -25794,6 +26347,34 @@
     "https://aiswlibrary.netlify.app/assets/clips/x-tilt.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/tilt-up.html"
+  },
+  {
+   "slug": "time-lapse",
+   "name": "Time-Lapse",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "Hours squeezed into seconds: the camera holds still while clouds race, shadows sweep and crowds flow like water.",
+   "when_to_use": "Use to show time passing, a city waking up, or a sky changing. Keep the camera locked so only the world moves.",
+   "prompt_example": "\"time-lapse of clouds racing over the city skyline from day into night, the camera holds still\"",
+   "pairs_well_with": [
+    "static hold",
+    "aerial shot",
+    "tilt shift miniature"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "calm",
+    "video"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/time-lapse.html"
   },
   {
    "slug": "tintype",
@@ -27038,6 +27619,33 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/wabi-sabi.html"
+  },
+  {
+   "slug": "walk-and-talk",
+   "name": "Walk-and-Talk",
+   "category": "Camera Movements",
+   "category_id": "camera-movements",
+   "section": "Video and Cinematography",
+   "definition": "The camera moves backward in front of two people as they walk toward it, talking, so we see both faces the whole way.",
+   "when_to_use": "Use for busy dialogue scenes, like hallways, offices and city streets. It keeps a long conversation full of energy without cuts.",
+   "prompt_example": "\"walk-and-talk, the camera moves backward down a hospital corridor in front of two doctors arguing as they walk\"",
+   "pairs_well_with": [
+    "steadicam",
+    "tracking shot",
+    "medium shot"
+   ],
+   "works_in": [
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "camera movement",
+    "video"
+   ],
+   "media": [],
+   "url": "https://aiswlibrary.netlify.app/keyword/walk-and-talk.html"
   },
   {
    "slug": "watercolor",
