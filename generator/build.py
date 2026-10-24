@@ -294,7 +294,7 @@ FILTER_GROUPS = [
  ("Light", ["golden light","soft light","dramatic light","neon light","night","glow"]),
  ("Feel", ["cute","dreamy","cozy","elegant","playful","romantic","moody","calm","spooky","edgy","magical","retro","vintage","futuristic"]),
  ("Type", ["painting","drawing","photography","fashion","pattern","craft","abstract","texture","nature","urban"]),
- ("Video", ["camera movement","framing","lens effect","lighting","editing","film look"]),
+ ("Video", ["camera movement","framing","lens effect","lighting","editing","film look","documentary"]),
  ("Design", ["web design","ui motion","motion graphics"]),
 ]
 all_tags = set()
