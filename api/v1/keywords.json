@@ -1,7 +1,7 @@
 {
  "library": "AI and See Why Keyword Library",
  "updated": "October 2026",
- "count": 972,
+ "count": 993,
  "keywords": [
   {
    "slug": "16mm-film-look",
@@ -1408,6 +1408,71 @@
     "https://aiswlibrary.netlify.app/assets/clips/arc.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/arc-shot.html"
+  },
+  {
+   "slug": "archival-editorial-edit",
+   "name": "Archival Editorial Edit",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "An edit over talking-head footage: soft black-and-white archive inserts with gentle glow and fine moving grain, elegant words in three typefaces, a word tucked behind the speaker, and split screens that slide in beside them.",
+   "when_to_use": "Use to dress up interviews and presenter videos with archive material while keeping the person clean and in colour.",
+   "prompt_example": "\"interview edit, presenter on the left, bright soft black and white archive photo slides in as a split screen, an italic serif word sits behind the speaker\"",
+   "pairs_well_with": [
+    "vox collage",
+    "kinetic typography"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "editing",
+    "black and white",
+    "elegant",
+    "film look",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-archival-editorial-edit.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/archival-editorial-edit.html"
+  },
+  {
+   "slug": "archive-light-table",
+   "name": "Archive Light Table",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Old photo negatives and records laid on a glowing light table. A magnifying loupe slides over each one and turns the negative into a positive inside the lens, with notes pointing at what matters.",
+   "when_to_use": "Use when a story checks a famous claim against its original source, or looks closely at old photos and documents.",
+   "prompt_example": "\"glass photo negatives on a backlit light table, a loupe slides over one and shows it as a positive, orange rings point to details\"",
+   "pairs_well_with": [
+    "vox collage",
+    "microscope story"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "vintage",
+    "photography",
+    "glow",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-archive-light-table.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/archive-light-table.html"
   },
   {
    "slug": "argyle",
@@ -4988,7 +5053,8 @@
    "tags": [
     "video",
     "texture",
-    "words and letters"
+    "words and letters",
+    "documentary"
    ],
    "media": [
     "https://aiswlibrary.netlify.app/assets/style-samples/collage-explainer.mp4"
@@ -6484,7 +6550,8 @@
    "tags": [
     "video",
     "tech",
-    "words and letters"
+    "words and letters",
+    "documentary"
    ],
    "media": [
     "https://aiswlibrary.netlify.app/assets/style-samples/data-chart-animation.mp4"
@@ -6521,6 +6588,37 @@
     "https://aiswlibrary.netlify.app/assets/styles/ant.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/data-dense-enterprise-ui.html"
+  },
+  {
+   "slug": "data-physicalization",
+   "name": "Data Physicalization",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Numbers built as real objects on a studio table: every value is a stack of plates to scale, landing one by one, with a counter and labels pointing at each pile.",
+   "when_to_use": "Use when a number is hard to imagine and needs to feel solid, like money, time or quantities.",
+   "prompt_example": "\"data physicalization on a walnut table, brass and glass plates stack to show each number to scale, counter ticks up\"",
+   "pairs_well_with": [
+    "data viz explainer",
+    "white model projection"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "elegant",
+    "texture",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-data-physicalization.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/data-physicalization.html"
   },
   {
    "slug": "data-viz-explainer",
@@ -8160,6 +8258,38 @@
    "url": "https://aiswlibrary.netlify.app/keyword/encaustic-art.html"
   },
   {
+   "slug": "engineering-briefing-board",
+   "name": "Engineering Briefing Board",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "One whiteboard wall filled live: cut-out photos pinned with magnets, marker notes written letter by letter, blue measuring lines, and a red stamp when something crosses the safe limit. It ends on one pull back that shows the whole wall.",
+   "when_to_use": "Use to explain a problem and its options, like a planning meeting for one hard decision.",
+   "prompt_example": "\"whiteboard wall, photo cut-outs pinned with magnets, marker notes write on, a measuring line passes the safe limit, red stamp\"",
+   "pairs_well_with": [
+    "live whiteboard lesson",
+    "vox collage"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "drawing",
+    "tech",
+    "words and letters",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-engineering-briefing-board.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/engineering-briefing-board.html"
+  },
+  {
    "slug": "english-country-house",
    "name": "English Country House",
    "category": "Interior Decor",
@@ -8389,6 +8519,37 @@
     "https://aiswlibrary.netlify.app/assets/styles/md-exploded-product.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/exploded-product-animation.html"
+  },
+  {
+   "slug": "exploded-teardown",
+   "name": "Exploded Teardown",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "An object comes apart along one line as the camera circles it, part by part, then closes back up with real measurements drawn on.",
+   "when_to_use": "Use for product explainers, how-it-is-made videos and anything about the parts inside.",
+   "prompt_example": "\"exploded view of a can on a dark bench, layers lift apart along one axis as the camera orbits, dimension lines appear\"",
+   "pairs_well_with": [
+    "exploded product animation",
+    "blueprint to reality"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "elegant",
+    "dark colors",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-exploded-teardown.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/exploded-teardown.html"
   },
   {
    "slug": "exploded-view",
@@ -9329,6 +9490,38 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/flat-lay.html"
+  },
+  {
+   "slug": "flat-science-animation",
+   "name": "Flat Science Animation",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A flat, outline-free world that glows on a deep blue night. The camera dives through scale, from a planet to a window to a tiny detail, and labels pop in beside each thing.",
+   "when_to_use": "Use for science explainers about size and scale, from space down to cells.",
+   "prompt_example": "\"flat outline-free glowing illustration, camera dives from a night planet into a lit window, labels pop in\"",
+   "pairs_well_with": [
+    "flat science explainer",
+    "kinetic type animation"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "playful",
+    "glow",
+    "night",
+    "vibrant colors",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-kurzgesagt-flat-science.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/flat-science-animation.html"
   },
   {
    "slug": "flat-science-explainer",
@@ -14455,6 +14648,37 @@
    "url": "https://aiswlibrary.netlify.app/keyword/library-study.html"
   },
   {
+   "slug": "lidar-survey",
+   "name": "LiDAR Survey",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A laser point cloud scans a place: the picture turns into thousands of points, layers peel away to show what is underneath, and the ground settles into contour lines.",
+   "when_to_use": "Use for archaeology, landscapes, buildings and anything about what lies beneath the surface.",
+   "prompt_example": "\"lidar point cloud scan of a house and garden, roof peels away layer by layer, ground becomes contour lines\"",
+   "pairs_well_with": [
+    "satellite briefing",
+    "white model projection"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "futuristic",
+    "architecture",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-lidar-survey.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/lidar-survey.html"
+  },
+  {
    "slug": "light-leak",
    "name": "Light Leak",
    "category": "Transitions and Editing",
@@ -16025,6 +16249,37 @@
    "url": "https://aiswlibrary.netlify.app/keyword/math-morph-explainer.html"
   },
   {
+   "slug": "maths-morph-animation",
+   "name": "Maths Morph Animation",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "On a black background, one shape smoothly turns into the next while the equation beside it changes. Each colour stands for one idea, and the picture stays still while you read.",
+   "when_to_use": "Use for maths, science and how-it-works ideas that build step by step.",
+   "prompt_example": "\"on black, a circle morphs into a curve while the equation updates, blue for one idea and yellow for energy, smooth transform\"",
+   "pairs_well_with": [
+    "math morph explainer",
+    "data viz explainer"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "abstract",
+    "dark colors",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-3blue1brown.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/maths-morph-animation.html"
+  },
+  {
    "slug": "maximalist-interior",
    "name": "Maximalist Interior",
    "category": "Interior Decor",
@@ -16375,6 +16630,37 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/microscape.html"
+  },
+  {
+   "slug": "microscope-story",
+   "name": "Microscope Story",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "One continuous zoom down a microscope slide, from the glass to a single cell, with a scale bar, the lens in use and a reading that counts what it finds.",
+   "when_to_use": "Use for science, biology and health stories that describe what is seen. Keep it to description, never diagnosis.",
+   "prompt_example": "\"continuous zoom down a stained microscope slide to one cell, scale bar and magnification label, focus breathes\"",
+   "pairs_well_with": [
+    "lidar survey",
+    "archive light table"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "calm",
+    "abstract",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-microscope-story.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/microscope-story.html"
   },
   {
    "slug": "mid-century-cutout",
@@ -18850,7 +19136,8 @@
     "nature",
     "drawing",
     "calm",
-    "motion graphics"
+    "motion graphics",
+    "documentary"
    ],
    "media": [
     "https://aiswlibrary.netlify.app/assets/styles/md-map-cartographic.mp4"
@@ -20312,6 +20599,37 @@
     "https://aiswlibrary.netlify.app/assets/style-samples/presenter-explainer.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/presenter-explainer.html"
+  },
+  {
+   "slug": "presenter-host-animation",
+   "name": "Presenter Host Animation",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A small cartoon host stands beside charts, numbers and key words, and the layout changes every sentence: a full-page number, a chart with the host beside it, a host standing on a bar.",
+   "when_to_use": "Use for business, history and money explainers where a friendly guide keeps viewers company.",
+   "prompt_example": "\"cartoon host beside a bar chart, a big number counts to the spoken word, the layout changes each sentence\"",
+   "pairs_well_with": [
+    "presenter explainer",
+    "data viz explainer"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "playful",
+    "tech",
+    "words and letters",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-presenter-explainer.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/presenter-host-animation.html"
   },
   {
    "slug": "pressed-flowers-and-ink",
@@ -22105,6 +22423,38 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/sari.html"
+  },
+  {
+   "slug": "satellite-briefing",
+   "name": "Satellite Briefing",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "One long zoom from a globe down to a single place through layers of satellite-style maps. A targeting reticle locks on, moving things leave thin tracks, and one amber reading counts the key number.",
+   "when_to_use": "Use for stories about places, borders, land and change over time. The full style uses real satellite pictures.",
+   "prompt_example": "\"zoom from the globe down to a neighbourhood through satellite map layers, reticle locks on, one amber number counts up\"",
+   "pairs_well_with": [
+    "paper map journey",
+    "lidar survey"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "futuristic",
+    "architecture",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-satellite-briefing.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/satellite-briefing.html"
   },
   {
    "slug": "saul-leiter",
@@ -24629,6 +24979,37 @@
    "url": "https://aiswlibrary.netlify.app/keyword/storytime-animation.html"
   },
   {
+   "slug": "storytime-stick-figure",
+   "name": "Storytime Stick Figure",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A simple drawn character tells a story in quick cuts: poses snap into place and freeze, and the joke lands on a silent close-up of the character's face.",
+   "when_to_use": "Use for personal stories, funny explainers and voiceover-led videos with one host character.",
+   "prompt_example": "\"simple white cartoon character with thick lines, poses snap and freeze, silent reaction close-up for the punchline\"",
+   "pairs_well_with": [
+    "storytime animation",
+    "sci fi sitcom toon"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "cute",
+    "playful",
+    "drawing",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-storytime-stick-figure.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/storytime-stick-figure.html"
+  },
+  {
    "slug": "street-tacos",
    "name": "Street Tacos",
    "category": "Food",
@@ -24656,6 +25037,37 @@
    ],
    "media": [],
    "url": "https://aiswlibrary.netlify.app/keyword/street-tacos.html"
+  },
+  {
+   "slug": "subject-analysis",
+   "name": "Subject Analysis",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A security-camera feed takes a subject apart in stages: a target locks on, a silhouette scans in, edges and a mesh appear, colour returns with an enhance zoom, an ID match counts up, and the feed glitches back to the start.",
+   "when_to_use": "Use for tech reveals, mystery hooks and looping social clips.",
+   "prompt_example": "\"CCTV analysis of a character, reticle locks on, silhouette scan, wireframe mesh, enhance zoom, ID match 98 percent, glitch back to start\"",
+   "pairs_well_with": [
+    "hologram hud",
+    "glitch datamosh"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "tech",
+    "futuristic",
+    "edgy",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-subject-analysis.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/subject-analysis.html"
   },
   {
    "slug": "subsurface-scattering",
@@ -26072,6 +26484,102 @@
    "url": "https://aiswlibrary.netlify.app/keyword/tooltip.html"
   },
   {
+   "slug": "torn-paper-collage-daylight",
+   "name": "Torn-Paper Collage, Daylight",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "The torn-paper collage dive in bright daylight colours: sky blue, red, orange and yellow torn sheets, halftone photo cut-outs and white paper tags.",
+   "when_to_use": "Use for cheerful intros, travel and family-friendly openers.",
+   "prompt_example": "\"stop-motion torn paper collage, sky blue and red torn sheets, halftone photo cut-outs, a hole tears open into a sunny scene\"",
+   "pairs_well_with": [
+    "torn paper collage film",
+    "memphis animation"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "craft",
+    "playful",
+    "vibrant colors",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-torn-paper-collage-daylight.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/torn-paper-collage-daylight.html"
+  },
+  {
+   "slug": "torn-paper-collage-film",
+   "name": "Torn-Paper Collage Film",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "One unbroken stop-motion dive through torn magazine collage at night: pieces drop in, holes tear open into the next world, a kaleidoscope zooms, a title lands and the page peels away to a logo. Neon pink on a night sky.",
+   "when_to_use": "Use for channel intros, launch films and short, energetic openers. It cuts to the music, so it suits pieces with a strong beat.",
+   "prompt_example": "\"10-second stop-motion torn paper collage intro, night sky with neon pink, a hole tears open into the next scene, title drops in, page peels to the logo\"",
+   "pairs_well_with": [
+    "torn paper collage daylight",
+    "punk zine collage",
+    "mid century cutout"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "craft",
+    "playful",
+    "vibrant colors",
+    "night",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-torn-paper-collage.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/torn-paper-collage-film.html"
+  },
+  {
+   "slug": "torn-paper-collage-pastel",
+   "name": "Torn-Paper Collage, Pastel",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "The torn-paper collage dive in soft pastels: cream, blush pink and lavender sheets with magenta accents.",
+   "when_to_use": "Use for gentle, friendly brand intros and lifestyle openers.",
+   "prompt_example": "\"stop-motion torn paper collage in cream, blush pink and lavender, magenta accents, a page peels to reveal the logo\"",
+   "pairs_well_with": [
+    "torn paper collage film",
+    "paper storybook"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "craft",
+    "cute",
+    "pastel colors",
+    "pink",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-torn-paper-collage-aisw.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/torn-paper-collage-pastel.html"
+  },
+  {
    "slug": "toyism",
    "name": "Toyism",
    "category": "Art Styles and Movements",
@@ -27083,6 +27591,137 @@
    "url": "https://aiswlibrary.netlify.app/keyword/vorticism.html"
   },
   {
+   "slug": "vox-collage",
+   "name": "Vox Collage",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "The investigative news-video look: halftone photo prints, clippings and typed labels on a paper desk. The camera glides from clue to clue while highlighter, red circles and red string are drawn on in small handmade steps.",
+   "when_to_use": "Use for history, news and how-it-really-happened stories built on real photos and documents. It needs material to show; without any it becomes an empty desk.",
+   "prompt_example": "\"documentary collage, halftone archive photos taped to a paper desk, red marker circles a date, red string leads to the next photo, camera glides\"",
+   "pairs_well_with": [
+    "vox collage dark card",
+    "vox collage bright editorial",
+    "archive light table"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "editing",
+    "vintage",
+    "black and white",
+    "texture",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-vox-collage.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/vox-collage.html"
+  },
+  {
+   "slug": "vox-collage-bright-editorial",
+   "name": "Vox Collage, Bright Editorial",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "Cut-out photos with white paper borders over bold flat colour fields of warm yellow, off-white, deep navy and coral. Big condensed words stamp in beside them.",
+   "when_to_use": "Use for punchy explainers, social clips and chapter openers. One colour field per scene keeps it readable.",
+   "prompt_example": "\"bright editorial collage, halftone cut-out photo with white paper border on a flat coral background, a big bold word stamps in\"",
+   "pairs_well_with": [
+    "vox collage",
+    "flat colour editorial"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "vibrant colors",
+    "playful",
+    "words and letters",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-vox-collage-bright.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/vox-collage-bright-editorial.html"
+  },
+  {
+   "slug": "vox-collage-dark-card",
+   "name": "Vox Collage, Dark Card",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "The same collage desk with a big black card laid on it for one section: a quote or timeline types on in white, with a red line underneath.",
+   "when_to_use": "Use for a key quote, a turning point or a run of dates inside a collage film. One dark section per film keeps it special.",
+   "prompt_example": "\"documentary collage, black card on a paper desk, a quote types on in white, red underline draws beneath it\"",
+   "pairs_well_with": [
+    "vox collage",
+    "timeline"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "editing",
+    "dark colors",
+    "words and letters",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-vox-collage-dark.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/vox-collage-dark-card.html"
+  },
+  {
+   "slug": "vox-collage-paper-diorama",
+   "name": "Vox Collage, Paper Diorama",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A miniature world built from aged sepia newspaper: cut-out figures with black bars over their eyes, one burnt-orange object as the only colour, and short words printed on signs and props, under warm lamp light.",
+   "when_to_use": "Use for dramatic, investigative stories about money, power or mystery. The full look usually starts from generated images, with labels and moves added on top.",
+   "prompt_example": "\"paper diorama made of aged sepia newspaper, cut-out figure with a black censor bar over the eyes, one burnt-orange prop, letterpress word on a sign, warm tungsten light, tilt-shift blur\"",
+   "pairs_well_with": [
+    "vox collage",
+    "tilt shift miniature"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "craft",
+    "vintage",
+    "moody",
+    "golden light",
+    "motion graphics",
+    "documentary"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-vox-collage-diorama.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/vox-collage-paper-diorama.html"
+  },
+  {
    "slug": "wabi-sabi",
    "name": "Wabi-Sabi",
    "category": "Art Styles and Movements",
@@ -27393,6 +28032,37 @@
     "https://aiswlibrary.netlify.app/assets/clips/x-m-whip.mp4"
    ],
    "url": "https://aiswlibrary.netlify.app/keyword/whip-pan.html"
+  },
+  {
+   "slug": "white-model-projection",
+   "name": "White Model Projection",
+   "category": "Motion Graphics Styles",
+   "category_id": "motion-graphics-styles",
+   "section": "Design and Motion Styles",
+   "definition": "A plain white model of a town on a table in a dark room. A projector lights it with data: houses change colour, waves of light climb the streets, and pins label what matters.",
+   "when_to_use": "Use for city planning, maps of change and data about places.",
+   "prompt_example": "\"white architectural model of a town in a dark room, projector lights the houses blue, a wave of colour climbs the streets\"",
+   "pairs_well_with": [
+    "lidar survey",
+    "data physicalization"
+   ],
+   "works_in": [
+    "claude-code",
+    "seedance",
+    "kling",
+    "veo",
+    "runway"
+   ],
+   "tags": [
+    "architecture",
+    "tech",
+    "glow",
+    "motion graphics"
+   ],
+   "media": [
+    "https://aiswlibrary.netlify.app/assets/styles/md-white-model-projection.mp4"
+   ],
+   "url": "https://aiswlibrary.netlify.app/keyword/white-model-projection.html"
   },
   {
    "slug": "whiteboard-animation",
